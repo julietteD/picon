@@ -18,6 +18,12 @@
                     <x-nav-link :href="route('admin.participations')" :active="request()->routeIs('admin.participations')">
                         {{ __('Participations') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('admin.content.edit')" :active="request()->routeIs('admin.content')">
+                        {{ __('Contents') }}
+                    </x-nav-link>
+                       <x-nav-link :href="route('get_csv')" >
+                        {{ __('.CSV') }}
+                    </x-nav-link>
                 </div>
             </div>
 

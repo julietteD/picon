@@ -16,54 +16,60 @@
 
 <fieldset class="py-2">
     <div class="form-group">
-        <label>Name</label>
-        <input type="text" required class="form-control" name="name" value="@if(!empty($participation->name)){{$participation->name}}@endif" >
+        <label>firstname</label>
+        <input type="text" required class="form-control" name="firstname" value="@if(!empty($participation->firstname)){{$participation->firstname}}@endif" >
+    </div>
+</fieldset>
+<fieldset class="py-2">
+    <div class="form-group">
+        <label>lastname</label>
+        <input type="text" required class="form-control" name="lastname" value="@if(!empty($participation->lastname)){{$participation->lastname}}@endif" >
     </div>
 </fieldset>
 
 <fieldset class="py-2">
     <div class="form-group">
-        <label>Bio</label>
-        <input type="text"  class="form-control" name="bio" value="@if(!empty($participation->bio)){{$participation->bio}}@endif" >
+        <label>language</label>
+        <input type="text" required class="form-control" name="language" value="@if(!empty($participation->language)){{$participation->language}}@endif" >
     </div>
 </fieldset>
 
 <fieldset class="py-2">
     <div class="form-group">
-        <label>Link 1</label>
-        <input type="text"  class="form-control" name="link1" value="@if(!empty($participation->link1)){{$participation->link1}}@endif" >
+        <label>email</label>
+        <input type="text" required class="form-control" name="email" value="@if(!empty($participation->email)){{$participation->email}}@endif" >
     </div>
 </fieldset>
 
 <fieldset class="py-2">
     <div class="form-group">
-        <label>Link 2</label>
-        <input type="text"  class="form-control" name="link2" value="@if(!empty($participation->link2)){{$participation->link2}}@endif" >
+        <label>birthdate</label>
+        <input type="text" required class="form-control" name="birthdate" value="@if(!empty($participation->birthdate)){{$participation->birthdate}}@endif" >
+    </div>
+</fieldset>
+
+
+<fieldset class="py-2">
+    <div class="form-group">
+        <label>ipaddress</label>
+        <input type="text" required class="form-control" name="ipaddress" value="@if(!empty($participation->ipaddress)){{$participation->ipaddress}}@endif" >
+    </div>
+</fieldset>
+
+
+<fieldset class="py-2">
+    <div class="form-group">
+        <label>city</label>
+        <input type="text" required class="form-control" name="city" value="@if(!empty($participation->city)){{$participation->city}}@endif" >
     </div>
 </fieldset>
 
 <fieldset class="py-2">
     <div class="form-group">
-        <label>linkFacebook</label>
-        <input type="text"  class="form-control" name="linkFacebook" value="@if(!empty($participation->linkFacebook)){{$participation->linkFacebook}}@endif" >
+        <label>origin</label>
+        <input type="text" required class="form-control" name="origin" value="@if(!empty($participation->origin)){{$participation->origin}}@endif" >
     </div>
 </fieldset>
-
-<fieldset class="py-2">
-    <div class="form-group">
-        <label>linkX</label>
-        <input type="text"  class="form-control" name="linkX" value="@if(!empty($participation->linkX)){{$participation->linkX}}@endif" >
-    </div>
-</fieldset>
-
-<fieldset class="py-2">
-    <div class="form-group">
-        <label>Spotify</label>
-        <input type="text"  class="form-control" name="spotify" value="@if(!empty($participation->spotify)){{$participation->spotify}}@endif" >
-    </div>
-</fieldset>
-
-
 
 
 
@@ -82,16 +88,5 @@
 
 
 <script>
-    var inputcb = document.getElementsByClassName('tagcb');
-    for (var i = 0 ; i < inputcb.length; i++) {
-          inputcb[i].addEventListener('click', function() {
-            var elem = document.querySelector('.tags');
-            var old  = elem.value.trim(); 
-            if(!this.checked){
-                elem.value = old.replace(this.value, "");
-            }
-            else{
-                elem.value = old + ',' + this.value;
-            }
-        }, false ) ; }
+  
 </script>

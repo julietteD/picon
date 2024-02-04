@@ -13,3 +13,11 @@ textarea {
 label {
     display: block
 }
+
+.wrapper {
+    padding: 0 20%;
+}
+
+section {
+    padding: 40px 0
+}

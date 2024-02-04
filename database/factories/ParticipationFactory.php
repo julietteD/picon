@@ -15,14 +15,14 @@ class ParticipationFactory extends Factory
     public function definition(): array
     {
         return [
-            'firstname' => fake()->name(),
-            'lastname' => fake()->name(),
-            'language' => $this->faker->text($maxNbChars = 30),
+            'firstname' => $this->faker->firstname(),
+            'lastname' => $this->faker->lastname(),
+            'language' => $this->faker->languageCode(),
             'email' => fake()->unique()->safeEmail(),
-            'birthdate' => $this->faker->text($maxNbChars = 30),
-            'ipaddress' => $this->faker->text($maxNbChars = 30),
+            'birthdate' => $this->faker->date(),
+            'ipaddress' => $this->faker->localIpv4(),
             'city' => $this->faker->city(),
-            'origin' => $this->faker->text($maxNbChars = 30)
+            'origin' => $this->faker->word(),
         ];
     }
 

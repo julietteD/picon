@@ -2,6 +2,7 @@
 
 TOP PAGE
 
-> LANGUES
+@include('includes/language_switcher')
+</div>
 
 </header>

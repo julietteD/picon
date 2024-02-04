@@ -17,9 +17,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::get('language/{locale}', [ParticipationController::class, 'setLocaleLang'])->name('home');
+
+Route::get('/', [ParticipationController::class, 'welcome'])->name('home');
+
+
 Route::post('subscribe', [ParticipationController::class, 'participate'])->name('subscribe');
 
 Route::get('/dashboard', function () {
@@ -27,6 +31,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -41,7 +47,8 @@ Route::middleware('auth')->group(function () {
     Route::get('contents/', [AdminController::class, 'editContent'])->name('admin.content.edit');
     Route::post('contents/edit', [AdminController::class, 'editContentAction'])->name('admin.contents.edit.action');
 
-
+    
+    Route::get('get_csv', [AdminController::class, 'get_csv'])->name('get_csv');
 });
 
 require __DIR__.'/auth.php';

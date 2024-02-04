@@ -5,19 +5,21 @@
         </h2>
     </x-slot>
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl py-4 mx-auto px-4 sm:px-6 lg:px-8">
 
-<div class="py-4">
-	<a href="{{route('admin.participations.new')}}" class="btn cur-p btn-success">Nouveau</a>
-</div>
-	
+
 	<table class="table">
 		<thead class="thead-dark">
 			<tr>
 				<th scope="col">Nom</th>
 				<th scope="col">Prénom</th>
-				
-<th></th>
+				<th scope="col">language</th>
+				<th scope="col">email</th>
+				<th scope="col">birthdate</th>
+				<th scope="col">ipaddress</th>
+				<th scope="col">city</th>
+				<th scope="col">origin</th>
+				<th></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -25,6 +27,12 @@
 				<tr>
 					<th scope="row">{{ $participation->lastname }}</th>
 					<th scope="row">{{ $participation->firstname }}</th>
+					<th scope="row">{{ $participation->language }}</th>
+					<th scope="row">{{ $participation->email }}</th>
+					<th scope="row">{{ $participation->birthdate }}</th>
+					<th scope="row">{{ $participation->ipaddress }}</th>
+					<th scope="row">{{ $participation->city }}</th>
+					<th scope="row">{{ $participation->origin }}</th>
 
 					<td class="mainActions">
 						<a class="action btn btn-info" href="{{ route('admin.participations.edit', ['id' => $participation->id ])}}">Edit</a>
@@ -35,5 +43,6 @@
 		</tbody>
 	</table>
 </div>
+<script>function warning() { return confirm("Please confirm before deleting:");}</script>
 
 </x-app-layout>

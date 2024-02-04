@@ -13,9 +13,12 @@ return new class extends Migration
     {
         Schema::create('contents', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('body1');
-        
+            $table->string('fr_title');
+            $table->string('fr_body1');
+            $table->string('en_title');
+            $table->string('en_body1');
+            $table->string('nl_title');
+            $table->string('nl_body1');
             $table->timestamps();
         });
     }

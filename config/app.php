@@ -97,6 +97,16 @@ return [
     */
 
     'fallback_locale' => 'en',
+/*
+    |
+    | List all locales that your application works with
+    |
+    */
+    'available_locales' => [
+      'English' => 'en',
+      'Nederlands' => 'nl',
+      'French' => 'fr',
+    ],
 
     /*
     |--------------------------------------------------------------------------
