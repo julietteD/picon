@@ -34,7 +34,7 @@
 
     @if(isset($reply)) 
 
-    <p>Total success </p>
+    <p>Total success</p>
   
     @else
     <form method="POST" action="{{route('subscribe')}}">
@@ -96,6 +96,7 @@ A propos
 <section>
 Privacy policy
 </section>
+<script id="CookieDeclaration" src="https://consent.cookiebot.com/f0e14da4-ebdc-484f-b4b2-a19f210eec45/cd.js" type="text/javascript" async></script>
 
 
 </div>
