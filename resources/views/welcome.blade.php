@@ -196,8 +196,10 @@
 
         <div class="calendar">
             <div class="calendar-about">
-            <p>Une immense collection de vinyles, cinq bars iconiques, un DJ pour mixer tes morceaux favoris. Tu choisis le son, il crée l’ambiance, nous servons du Picon-bière. Le mix parfait, tout simplement.
-Et comme Picon est une expérience à partager à plusieurs, ton amitié est récompensée.</p></div>
+              @if(app()->getLocale()=='fr' ){!! $content->fr_body6 !!} 
+                @elseif(app()->getLocale()=='nl'){!! $content->nl_body6 !!} 
+                @else {!! $content->en_body6 !!} 
+                @endif</div>
             <div class="calendar-table">
                 <ul>
                 @foreach ($calendars as $calendar)
@@ -213,7 +215,10 @@ Et comme Picon est une expérience à partager à plusieurs, ton amitié est ré
         </div>
 
         <div class="vinyl-box">
-            <p>Pendant les Vinyl Sessions,<br/> profite d’un Picon bière offert pour chaque verre acheté.</p>
+             @if(app()->getLocale()=='fr' ){!! $content->fr_body7 !!} 
+                @elseif(app()->getLocale()=='nl'){!! $content->nl_body7 !!} 
+                @else {!! $content->en_body7 !!} 
+                @endif
         </div>
      </div>
 </section>
