@@ -60,7 +60,7 @@
 <fieldset class="py-2">
     <div class="form-group">
         <label>Link</label>
-        <input type="text" required class="form-control" name="link" value="@if(!empty($calendar->link)){{$calendar->link}}@endif" >
+        <input type="text"  class="form-control" name="link" value="@if(!empty($calendar->link)){{$calendar->link}}@endif" >
     </div>
 </fieldset>
 
