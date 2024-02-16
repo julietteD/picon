@@ -24,9 +24,9 @@
             <div class="video"><img src="{{ asset('img/video.png') }}" /></div>
             <div class="hover-content">
             <div class="content-text">
-                <h2>  @if(app()->getLocale()=='fr' ){{ $content->fr_title2 }} 
-            @elseif(app()->getLocale()=='nl'){{ $content->nl_title2 }} 
-            @else {{ $content->en_title2 }}
+                <h2>  @if(app()->getLocale()=='fr' ){!! $content->fr_title2 !!} 
+            @elseif(app()->getLocale()=='nl'){!! $content->nl_title2 !!} 
+            @else {!! $content->en_title2 !!} 
             @endif</h2>
                 <div>  @if(app()->getLocale()=='fr' ){!! $content->fr_body2 !!} 
                 @elseif(app()->getLocale()=='nl'){!! $content->nl_body2 !!} 
