@@ -13,19 +13,25 @@
             @endif
         </h1>
         <div class="intro">
-            <p>
-                @if(app()->getLocale()=='fr' ){{ $content->fr_title1 }} 
-                @elseif(app()->getLocale()=='nl'){{ $content->nl_title1 }} 
-                @else {{ $content->en_title1 }}
+           
+                @if(app()->getLocale()=='fr' ){!! $content->fr_body1 !!} 
+                @elseif(app()->getLocale()=='nl'){!! $content->nl_body1 !!} 
+                @else {!! $content->en_body1 !!} 
                 @endif
-            </p>
+            
         </div>
         <div class="mainVideo">
             <div class="video"><img src="{{ asset('img/video.png') }}" /></div>
             <div class="hover-content">
             <div class="content-text">
-                <h2>Yellowstrap & Morgan Showcase</h2>
-                <div><p>Fais l'expérience des saveurs Picon en live ! Participe au concours et invite la personne de ton choix pour un Showcase exceptionnel de YellowStraps et Morgan.</p></div>
+                <h2>  @if(app()->getLocale()=='fr' ){{ $content->fr_title2 }} 
+            @elseif(app()->getLocale()=='nl'){{ $content->nl_title2 }} 
+            @else {{ $content->en_title2 }}
+            @endif</h2>
+                <div>  @if(app()->getLocale()=='fr' ){!! $content->fr_body2 !!} 
+                @elseif(app()->getLocale()=='nl'){!! $content->nl_body2 !!} 
+                @else {!! $content->en_body2 !!} 
+                @endif</div>
                  <a href="#section2" class="cta light-cta">{{ __('Inscris-toi au showcase') }}</a>
                  </div>
             </div>
