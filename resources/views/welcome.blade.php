@@ -143,7 +143,7 @@
                         </label>
                 </fieldset>
                         @csrf
-                        <input type="submit" class="cta">
+                        <div style="text-align:center"><input type="submit" value="{{ __('Tente ta chance') }}" class="cta"></div>
 
                 </form>
                 @endif
