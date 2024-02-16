@@ -1,5 +1,5 @@
 const elem = document.querySelector('input[name="birthdate"]');
-const datepicker = new datepicker(elem, {
+const datepicker = new Datepicker(elem, {
     format: 'yyyy-mm-dd',
 });
 
