@@ -37,9 +37,11 @@
             </div>
         </div>
 
-     <div class="programme"> <h4>Au programme :</h4>
-       <p> un bar avec des Picon bières offerts, de la bonne food, des concerts, un DJ set, et bien d’autres surprises…
-        </p>
+     <div class="programme"> 
+         @if(app()->getLocale()=='fr' ){!! $content->fr_body3 !!} 
+                @elseif(app()->getLocale()=='nl'){!! $content->nl_body" !!} 
+                @else {!! $content->en_body3 !!} 
+                @endif
         </div>
         <a href="#section2" class="cta light-cta">{{ __('Inscris-toi au showcase') }}</a>
         
@@ -52,7 +54,10 @@
     <div class="columns">
         <div class="showcase-pict"><img src="{{ asset('img/img-bartenders-placeholder.png') }}" /></div>
         <div class="showcase-form">
-            <h2>{{ $content->title }} lorem ipsum <strong>Dolor sit</strong> </h2>
+            <h2> @if(app()->getLocale()=='fr' ){!! $content->fr_title3 !!} 
+            @elseif(app()->getLocale()=='nl'){!! $content->nl_title3 !!} 
+            @else {!! $content->en_title3 !!} 
+            @endif </h2>
             <div class="intro">
                 <p>Neo-soul urbaine et chanson française ultra cool : gagne un ticket pour le showcase de YellowStraps et Morgan le jeudi 4 avril dans un lieu secret au cœur de Bruxelles. Le ticket est valable pour deux personnes, qui vas-tu inviter ?</p>
             </div>
