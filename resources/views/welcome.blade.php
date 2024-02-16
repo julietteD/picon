@@ -3,15 +3,6 @@
 @section('content')
 
 <div class="content">
-<div style="display:none">
-  {{ __('Welcome to our website!') }}
-
-        @if(app()->getLocale()=='fr' ){{ $content->fr_title1 }} 
-        @elseif(app()->getLocale()=='nl'){{ $content->nl_title1 }} 
-        @else {{ $content->en_title1 }}
-        @endif
-</div>
-      <!-- {{ app()->getLocale() }} -->
 
 <section id="section1">
     <div class="wrapper">
@@ -21,7 +12,14 @@
             @else {{ $content->en_title1 }}
             @endif
         </h1>
-        <div class="intro"><p>YellowStraps et Morgan sont en showcase privé à Bruxelles le 4 avril. Un évènement Picon dans un lieu encore secret…</p></div>
+        <div class="intro">
+            <p>
+                @if(app()->getLocale()=='fr' ){{ $content->fr_title1 }} 
+                @elseif(app()->getLocale()=='nl'){{ $content->nl_title1 }} 
+                @else {{ $content->en_title1 }}
+                @endif
+            </p>
+        </div>
         <div class="mainVideo">
             <div class="video"><img src="{{ asset('img/video.png') }}" /></div>
             <div class="hover-content">
