@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('fr_dateConcert')->nullable;
             $table->string('en_dateConcert')->nullable;
             $table->string('nl_dateConcert')->nullable;
-            $table->string('orderElt')->nullable->default(0);
+            $table->string('orderElt')->default(0)->nullable;
             $table->string('link')->nullable;
             $table->timestamps();
         });
