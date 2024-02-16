@@ -124,7 +124,7 @@
                             <input type="checkbox" id="conditions" name="conditions" value="conditions" required />
                            
 <span>
-                            @if(app()->getLocale()=='fr' ) J’accepte la<a href="{{route('privacy')}}">Privacy Policy</a>
+                            @if(app()->getLocale()=='fr' ) J’accepte la <a href="{{route('privacy')}}">Privacy Policy</a>
                             @elseif(app()->getLocale()=='nl') Agree
                             @else  Agree to our <a href="{{route('privacy')}}">Privacy Policy</a>
                             @endif
