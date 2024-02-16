@@ -13,11 +13,15 @@ return new class extends Migration
     {
         Schema::create('calendars', function (Blueprint $table) {
             $table->id();
-            $table->string('location');
-            $table->string('city');
-            $table->string('dateConcert');
-            $table->string('orderElt');
-            $table->string('link');
+            $table->string('location')->nullable;
+            $table->string('fr_city')->nullable;
+            $table->string('en_city')->nullable;
+            $table->string('nl_city')->nullable;
+            $table->string('fr_dateConcert')->nullable;
+            $table->string('en_dateConcert')->nullable;
+            $table->string('nl_dateConcert')->nullable;
+            $table->string('orderElt')->nullable->default(0);
+            $table->string('link')->nullable;
             $table->timestamps();
         });
     }
