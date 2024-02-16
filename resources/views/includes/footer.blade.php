@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <div class="warning">ENJOY picon responsibly</div>
+        <div class="warning">{{ __('ENJOY picon responsibly') }}</div>
     </div>
 </footer>
 <script id="CookieDeclaration" src="https://consent.cookiebot.com/f0e14da4-ebdc-484f-b4b2-a19f210eec45/cd.js" type="text/javascript" async></script>
