@@ -128,7 +128,7 @@
                             <input type="checkbox" id="conditions" name="conditions" value="conditions" required />
                            
 <span>
-                            @if(app()->getLocale()=='fr' ) J’accepte la <a href="{{route('privacy')}}">Privacy Policy</a>
+                            @if(app()->getLocale()=='fr' ) J’accepte la <a href="{{route('privacy')}}">Politique de confidentialité</a>
                             @elseif(app()->getLocale()=='nl') Agree
                             @else  Agree to our <a href="{{route('privacy')}}">Privacy Policy</a>
                             @endif
@@ -177,9 +177,16 @@
                 <img src="{{ asset('img/heart.svg') }}" class="heart" />
             
                 <div class="content-text">
-                    <h3>Picon. Bière. <br/>Et <b>c’est tout</b>.</h3>
-                    <p>5cl de Picon à l'orange, 25cl de Bière. Le cocktail est simple, le goût est mémorable.</p>
-                    <p>La fraîcheur de la bière, combinée à l’amertume de zestes d’orange séchées, à la douceur du caramel et aux notes subtiles de gentiane et de quinquina… Le mieux, c’est de découvrir les saveurs du Picon bière pendant les évènements Picon Live.</p>
+                    <h3>
+                     @if(app()->getLocale()=='fr' ){!! $content->fr_title4 !!} 
+            @elseif(app()->getLocale()=='nl'){!! $content->nl_title4 !!} 
+            @else {!! $content->en_title4 !!} 
+            @endif 
+            </h3>
+                    @if(app()->getLocale()=='fr' ){!! $content->fr_body5 !!} 
+                @elseif(app()->getLocale()=='nl'){!! $content->nl_body5 !!} 
+                @else {!! $content->en_body5 !!} 
+                @endif
                 </div>
            
             </div>
