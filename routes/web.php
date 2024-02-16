@@ -22,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('language/{locale}', [ParticipationController::class, 'setLocaleLang'])->name('home');
 
 Route::get('/', [ParticipationController::class, 'welcome'])->name('home');
+Route::get('/privacy', [ParticipationController::class, 'privacy'])->name('privacy');
+Route::get('/about', [ParticipationController::class, 'about'])->name('about');
 
 
 Route::post('subscribe', [ParticipationController::class, 'participate'])->name('subscribe');
@@ -29,6 +31,8 @@ Route::post('subscribe', [ParticipationController::class, 'participate'])->name(
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+
 
 Route::middleware('auth')->group(function () {
 
@@ -44,9 +48,20 @@ Route::middleware('auth')->group(function () {
     Route::get('participations/delete/{id}', [AdminController::class, 'deleteParticipation'])->name('admin.participations.delete');
     Route::post('participations/edit', [AdminController::class, 'editParticipationAction'])->name('admin.participations.edit.action');
 
+    Route::get('calendars', [AdminController::class, 'calendars'])->name('admin.calendars');
+    Route::get('calendars/new', [AdminController::class, 'editCalendar'])->name('admin.calendars.new');
+    Route::get('calendars/edit/{id}', [AdminController::class, 'editCalendar'])->name('admin.calendars.edit');
+    Route::get('calendars/delete/{id}', [AdminController::class, 'deleteCalendar'])->name('admin.calendars.delete');
+    Route::post('calendars/edit', [AdminController::class, 'editCalendarAction'])->name('admin.calendars.edit.action');
+
     Route::get('contents/', [AdminController::class, 'editContent'])->name('admin.content.edit');
     Route::post('contents/edit', [AdminController::class, 'editContentAction'])->name('admin.contents.edit.action');
 
+    Route::get('pcontents/', [AdminController::class, 'editPcontent'])->name('admin.pcontent.edit');
+    Route::post('pcontents/edit', [AdminController::class, 'editPcontentAction'])->name('admin.pcontents.edit.action');
+
+    Route::get('acontents/', [AdminController::class, 'editAcontent'])->name('admin.acontent.edit');
+    Route::post('acontents/edit', [AdminController::class, 'editAcontentAction'])->name('admin.acontents.edit.action');
     
     Route::get('get_csv', [AdminController::class, 'get_csv'])->name('get_csv');
 });

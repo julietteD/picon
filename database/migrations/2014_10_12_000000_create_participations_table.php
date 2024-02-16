@@ -19,8 +19,10 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('birthdate');
             $table->string('ipaddress');
-            $table->string('city');
-            $table->string('origin');
+            $table->string('question');
+            $table->string('persons');
+            $table->string('marketing')->nullable()->default(0);
+            $table->string('newsletter')->nullable()->default(0);
             $table->timestamps();
         });
     }

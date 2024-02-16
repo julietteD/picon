@@ -17,8 +17,10 @@
 				<th scope="col">email</th>
 				<th scope="col">birthdate</th>
 				<th scope="col">ipaddress</th>
-				<th scope="col">city</th>
-				<th scope="col">origin</th>
+				<th scope="col">question</th>
+				<th scope="col">persons</th>
+				<th scope="col">mark</th>
+				<th scope="col">news</th>
 				<th></th>
 			</tr>
 		</thead>
@@ -31,8 +33,10 @@
 					<th scope="row">{{ $participation->email }}</th>
 					<th scope="row">{{ $participation->birthdate }}</th>
 					<th scope="row">{{ $participation->ipaddress }}</th>
-					<th scope="row">{{ $participation->city }}</th>
-					<th scope="row">{{ $participation->origin }}</th>
+					<th scope="row">{{ $participation->question }}</th>
+					<th scope="row">{{ $participation->persons }}</th>
+					<th scope="row">{{ $participation->marketing }}</th>
+					<th scope="row">{{ $participation->newsletter }}</th>
 
 					<td class="mainActions">
 						<a class="action btn btn-info" href="{{ route('admin.participations.edit', ['id' => $participation->id ])}}">Edit</a>

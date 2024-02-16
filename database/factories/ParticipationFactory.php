@@ -21,8 +21,10 @@ class ParticipationFactory extends Factory
             'email' => fake()->unique()->safeEmail(),
             'birthdate' => $this->faker->date(),
             'ipaddress' => $this->faker->localIpv4(),
-            'city' => $this->faker->city(),
-            'origin' => $this->faker->word(),
+            'marketing' => $this->faker->boolean(),
+            'newsletter' => $this->faker->boolean(),
+            'question' => $this->faker->word(),
+            'persons' => $this->faker->word(),
         ];
     }
 

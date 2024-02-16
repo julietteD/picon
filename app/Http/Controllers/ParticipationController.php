@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Content;
+use App\Models\Pcontent;
+use App\Models\Acontent;
+use App\Models\Calendar;
 use App\Models\Participation;
 use App\Http\Requests\ProfileUpdateRequest;
 use Illuminate\Http\RedirectResponse;
@@ -20,20 +23,29 @@ class ParticipationController extends Controller
 
     public function setLocaleLang(Request $request){
       
-      
           // Save selected Locale to current "Session"
           $locale = $request->locale ?? 'en';
           // App::setLocale($locale); --> There is no need for this here, as the middleware will run after the redirect() where it has already been set.
           $request->session()->put('locale', $locale);
- 
           return redirect()->back();
     }
 
     public function welcome(){
         $content = Content::first();
-        return view('welcome', ['content' => $content]);
+        $calendars = Calendar::orderBy('orderElt')->get();
+        return view('welcome', ['content' => $content, 'calendars' => $calendars]);
 
     }
+    public function privacy(){
+        $content = Pcontent::first();
+        return view('privacy', ['content' => $content]);
+
+    }
+    public function about(){
+        $content = Acontent::first();
+        return view('about', ['content' => $content]);
+    }
+
     public function participate(Request $request): View
     {
         /*Mail::raw('Hello, this is a test mail!', function ($message) {
@@ -49,7 +61,8 @@ class ParticipationController extends Controller
             'lastname'=> 'required',
             'language'=> 'in:fr,nl,en',
             'email' => 'required|email',
-            'city'=> 'required'
+            'question'=> 'required',
+            'persons'=> 'required',
            ]);
     
 
@@ -69,9 +82,11 @@ class ParticipationController extends Controller
         $participation->email = $request->input('email');
         $participation->birthdate = $request->input('birthdate');
         $participation->ipaddress = $ip;
-        $participation->city = $request->input('city');
-        $participation->origin = $request->input('origin');
-  
+        $participation->question = $request->input('question');
+        $participation->persons = $request->input('persons');
+        $participation->newsletter = $request->input('newsletter');
+        $participation->marketing = $request->input('marketing');
+
         $participation->save();
 
           //Once validated, process the mail
@@ -82,11 +97,11 @@ class ParticipationController extends Controller
                 'firstname' => $request->input('firstname'),
                 'lastname' => $request->input('lastname')
             ];
-            $recipientEmail = 'juliette.delpech@gmail.com';
+            $recipientEmail = $request->input('email');
             Mail::to($recipientEmail)->send(new ParticipationService($formData));
         }
-
-        return view('welcome', [ 'reply' => 'success', 'content' => $content]);
+        $calendars = Calendar::orderBy('orderElt')->get();
+        return view('welcome', [ 'reply' => 'success', 'content' => $content, 'calendars' => $calendars]);
 
         
     }

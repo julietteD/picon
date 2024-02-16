@@ -56,18 +56,33 @@
     </div>
 </fieldset>
 
+<fieldset class="py-2">
+    <div class="form-group">
+        <label>Marketing</label>
+        <input type="text"  class="form-control" name="marketing" value="@if(!empty($participation->marketing)){{$participation->marketing}}@endif" >
+    </div>
+</fieldset>
+
 
 <fieldset class="py-2">
     <div class="form-group">
-        <label>city</label>
-        <input type="text" required class="form-control" name="city" value="@if(!empty($participation->city)){{$participation->city}}@endif" >
+        <label>Newsletter</label>
+        <input type="text"  class="form-control" name="newsletter" value="@if(!empty($participation->newsletter)){{$participation->newsletter}}@endif" >
+    </div>
+</fieldset>
+
+
+<fieldset class="py-2">
+    <div class="form-group">
+        <label>Question</label>
+        <input type="text"  class="form-control" name="question" value="@if(!empty($participation->question)){{$participation->question}}@endif" >
     </div>
 </fieldset>
 
 <fieldset class="py-2">
     <div class="form-group">
-        <label>origin</label>
-        <input type="text" required class="form-control" name="origin" value="@if(!empty($participation->origin)){{$participation->origin}}@endif" >
+        <label>Number of answers</label>
+        <input type="text" class="form-control" name="persons" value="@if(!empty($participation->persons)){{$participation->persons}}@endif" >
     </div>
 </fieldset>
 

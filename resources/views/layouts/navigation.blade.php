@@ -21,6 +21,15 @@
                     <x-nav-link :href="route('admin.content.edit')" :active="request()->routeIs('admin.content')">
                         {{ __('Contents') }}
                     </x-nav-link>
+                      <x-nav-link :href="route('admin.pcontent.edit')" :active="request()->routeIs('admin.pcontent')">
+                        {{ __('Privacy') }}
+                    </x-nav-link>
+                        <x-nav-link :href="route('admin.acontent.edit')" :active="request()->routeIs('admin.acontent')">
+                        {{ __('About') }}
+                    </x-nav-link>
+                     <x-nav-link :href="route('admin.calendars')" :active="request()->routeIs('admin.calendars')">
+                        {{ __('Calendar') }}
+                    </x-nav-link>
                        <x-nav-link :href="route('get_csv')" >
                         {{ __('.CSV') }}
                     </x-nav-link>
