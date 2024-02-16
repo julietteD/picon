@@ -21,26 +21,30 @@
             
         </div>
         <div class="mainVideo">
-            <div class="video"><img src="{{ asset('img/video.png') }}" /></div>
+          
             <div class="hover-content">
                 <div class="content-text">
                     <h2>  @if(app()->getLocale()=='fr' ){!! $content->fr_title2 !!} 
                 @elseif(app()->getLocale()=='nl'){!! $content->nl_title2 !!} 
                 @else {!! $content->en_title2 !!} 
                 @endif</h2>
+                
                  <div class="programme"> 
-         @if(app()->getLocale()=='fr' ){!! $content->fr_body3 !!} 
-                @elseif(app()->getLocale()=='nl'){!! $content->nl_body3 !!} 
-                @else {!! $content->en_body3 !!} 
-                @endif
-        </div>
-                    <div>  @if(app()->getLocale()=='fr' ){!! $content->fr_body2 !!} 
+                   
+                    @if(app()->getLocale()=='fr' ){!! $content->fr_body2 !!} 
                     @elseif(app()->getLocale()=='nl'){!! $content->nl_body2 !!} 
                     @else {!! $content->en_body2 !!} 
-                    @endif</div>
+                    @endif
+                    
+                     @if(app()->getLocale()=='fr' ){!! $content->fr_body3 !!} 
+                            @elseif(app()->getLocale()=='nl'){!! $content->nl_body3 !!} 
+                            @else {!! $content->en_body3 !!} 
+                            @endif
+                            </div>
                     <a href="#section2" class="cta light-cta">{{ __('Inscris-toi au showcase') }}</a>
                  </div>
             </div>
+              <div class="video"><img src="{{ asset('img/video.png') }}" /></div>
         </div>
 
     
