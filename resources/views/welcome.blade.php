@@ -102,13 +102,13 @@
                             <input type="hidden" name="language" value="{{ app()->getLocale() }}">
 
                         <fieldset> 
-                            <input type="text" name="{{ __('firstname') }}" required placeholder="firstname" value="{{ old('firstname') }}">
+                            <input type="text" name="firstname" required placeholder="{{ __('firstname') }}" value="{{ old('firstname') }}">
                       
-                            <input type="text" name="{{ __('lastname') }}" required placeholder="lastname" value="{{ old('lastname') }}">
+                            <input type="text" placeholder="{{ __('lastname') }}" required name="lastname" value="{{ old('lastname') }}">
                      
-                            <input type="email" name="{{ __('email') }}" required placeholder="email" value="{{ old('email') }}">
+                            <input type="email" placeholder="{{ __('email') }}" required name="email" value="{{ old('email') }}">
                      
-                            <input type="text" name="{{ __('birthdate') }}" required placeholder="birthdate" value="{{ old('birthdate') }}">
+                            <input type="text" placeholder="{{ __('birthdate') }}" required name="birthdate" value="{{ old('birthdate') }}">
                         
                             <div class="selectWrapper"><select name="question" required>
                                     <option disabled selected>{{ __('Quels sont les ingrédients du Picon Bière ?') }}</option>
