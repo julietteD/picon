@@ -39,7 +39,7 @@
 
      <div class="programme"> 
          @if(app()->getLocale()=='fr' ){!! $content->fr_body3 !!} 
-                @elseif(app()->getLocale()=='nl'){!! $content->nl_body" !!} 
+                @elseif(app()->getLocale()=='nl'){!! $content->nl_body3 !!} 
                 @else {!! $content->en_body3 !!} 
                 @endif
         </div>
@@ -59,7 +59,10 @@
             @else {!! $content->en_title3 !!} 
             @endif </h2>
             <div class="intro">
-                <p>Neo-soul urbaine et chanson française ultra cool : gagne un ticket pour le showcase de YellowStraps et Morgan le jeudi 4 avril dans un lieu secret au cœur de Bruxelles. Le ticket est valable pour deux personnes, qui vas-tu inviter ?</p>
+                @if(app()->getLocale()=='fr' ){!! $content->fr_body4 !!} 
+                @elseif(app()->getLocale()=='nl'){!! $content->nl_body4 !!} 
+                @else {!! $content->en_body4 !!} 
+                @endif
             </div>
             <div class="form">
 
