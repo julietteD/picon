@@ -218,7 +218,12 @@
     }
     
     #section2 .columns .showcase-form fieldset {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+    }
+    
+    #section2 .columns .showcase-form .advert {
+        font-size: 12px;
+        margin-top: 10px;
     }
     
     #section2 .columns .showcase-form h2 {
