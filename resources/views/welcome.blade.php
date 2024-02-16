@@ -166,6 +166,7 @@
 
     </div>
 </section>
+<div id="bandeau"> <img src="{{ asset('img/bandeau.png') }}" ></div>
 
 <section id="section3">
 	 <div class="wrapper">
