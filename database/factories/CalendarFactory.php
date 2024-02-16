@@ -12,8 +12,8 @@ class CalendarFactory extends Factory
     {
         return [
             'location' => $this->faker->word(),
-            'city' => $this->faker->word(),
-            'dateConcert' => $this->faker->word(),
+            'fr_city' => $this->faker->word(),
+            'fr_dateConcert' => $this->faker->word(),
             'orderElt' => $this->faker->randomDigit(),
             'link' => $this->faker->url(),
         ];
