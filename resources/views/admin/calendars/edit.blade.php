@@ -22,15 +22,31 @@
 </fieldset>
 <fieldset class="py-2">
     <div class="form-group">
-        <label>City</label>
-        <input type="text" required class="form-control" name="city" value="@if(!empty($calendar->city)){{$calendar->city}}@endif" >
+        <label>City FR</label>
+        <input type="text" required class="form-control" name="fr_city" value="@if(!empty($calendar->fr_city)){{$calendar->fr_city}}@endif" >
+    </div>
+     <div class="form-group">
+        <label>City EN</label>
+        <input type="text" required class="form-control" name="en_city" value="@if(!empty($calendar->en_city)){{$calendar->en_city}}@endif" >
+    </div>
+     <div class="form-group">
+        <label>City NL</label>
+        <input type="text" required class="form-control" name="nl_city" value="@if(!empty($calendar->nl_city)){{$calendar->nl_city}}@endif" >
     </div>
 </fieldset>
 
 <fieldset class="py-2">
     <div class="form-group">
-        <label>Date</label>
-        <input type="text" required class="form-control" name="dateConcert" value="@if(!empty($calendar->dateConcert)){{$calendar->dateConcert}}@endif" >
+        <label>Date FR</label>
+        <input type="text" required class="form-control" name="fr_dateConcert" value="@if(!empty($calendar->fr_dateConcert)){{$calendar->fr_dateConcert}}@endif" >
+    </div>
+     <div class="form-group">
+        <label>Date EN</label>
+        <input type="text" required class="form-control" name="en_dateConcert" value="@if(!empty($calendar->en_dateConcert)){{$calendar->en_dateConcert}}@endif" >
+    </div>
+     <div class="form-group">
+        <label>Date NL</label>
+        <input type="text" required class="form-control" name="nl_dateConcert" value="@if(!empty($calendar->nl_dateConcert)){{$calendar->nl_dateConcert}}@endif" >
     </div>
 </fieldset>
 

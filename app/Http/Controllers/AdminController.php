@@ -58,8 +58,12 @@ class AdminController extends Controller
       }
 
       $calendar->location = $request->input('location');
-      $calendar->city = $request->input('city');
-      $calendar->dateConcert = $request->input('dateConcert');
+      $calendar->fr_city = $request->input('fr_city');
+      $calendar->en_city = $request->input('en_city');
+      $calendar->nl_city = $request->input('nl_city');
+      $calendar->fr_dateConcert = $request->input('fr_dateConcert');
+      $calendar->en_dateConcert = $request->input('en_dateConcert');
+      $calendar->nl_dateConcert = $request->input('nl_dateConcert');
       $calendar->orderElt = $request->input('orderElt');
       $calendar->link = $request->input('link');
 

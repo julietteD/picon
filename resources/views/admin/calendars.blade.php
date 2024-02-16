@@ -24,8 +24,8 @@
 			@foreach($calendars as $calendar)
 				<tr>
 					<th scope="row">{{ $calendar->location }}</th>
-					<th scope="row">{{ $calendar->city }}</th>
-					<th scope="row">{{ $calendar->dateConcert }}</th>
+					<th scope="row">{{ $calendar->en_city }}</th>
+					<th scope="row">{{ $calendar->en_dateConcert }}</th>
 					<th scope="row">{{ $calendar->orderElt }}</th>
 					<th scope="row">{{ $calendar->link }}</th>
 			
