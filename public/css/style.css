@@ -225,10 +225,12 @@
         font-size: 28px;
         text-transform: uppercase;
         margin-bottom: 30px;
+        font-weight: 900;
     }
     
     #section2 .columns .showcase-form h2 strong {
         color: var(--orange);
+        font-weight: 900;
     }
     
     #section2 .columns .showcase-form .intro {

@@ -122,7 +122,14 @@
              
                         <label class="checkbox">
                             <input type="checkbox" id="conditions" name="conditions" value="conditions" required />
-                            <span>Agree to our <a href="{{route('privacy')}}">Privacy Policy</a></span>
+                           
+<span>
+                            @if(app()->getLocale()=='fr' ) J’accepte la  <a href="{{route('privacy')}}">politique de confidentialité</a>
+            @elseif(app()->getLocale()=='nl'){!! $content->nl_title3 !!} 
+            @else  Agree to our <a href="{{route('privacy')}}">Privacy Policy</a>
+              @endif
+            </span>
+                            
                         </label>
 
                          <label class="checkbox">
@@ -130,7 +137,7 @@
                             <span>{{ __('J’accèpte l’utilisation des données personnelles à des fins marketing et commerciales') }}</span>
                         </label>
 
-                         <label class="checkbox">
+                         <label class="checkbox" style="display:none">
                             <input type="checkbox" value="1" id="newsletter" name="newsletter" value="newsletter"  />
                             <span>{{ __('Je souhaite m’inscrire à la newsletter') }}</span>
                         </label>
