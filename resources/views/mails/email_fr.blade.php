@@ -12,7 +12,7 @@
 </h1>
       <p>  Merci pour ta participation au concours Picon Live. <br/>
         <br/>Le tirage au sort est prévu le 28 mars.</p>
-<img src="{{ $message->embed('assets/img/bandeau.png') }}" />
+<img src='{{ $message->embed(public_path().'/img/bandeau.png') }}'>
    <img src="https://piconlive.piconaperitif.com/img/bandeau.png" />
 </body>
 
