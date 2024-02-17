@@ -648,11 +648,14 @@ footer .warning {
 
 @media (max-width: 700px) {
     #section3 .calendar,
-    #section2 .columns {
+    #section2 .columns,
+    #section1 .hover-content {
         display: block;
     }
     #section3 .calendar .calendar-about,
-    #section2 .columns .showcase-pict {
+    #section2 .columns .showcase-pict,
+    #section1 .hover-content .hover-content,
+    #section1 .hover-content .video {
         width: 100%;
         margin-bottom: 20px;
     }
