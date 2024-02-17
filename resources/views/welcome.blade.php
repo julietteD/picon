@@ -207,8 +207,16 @@
                 @foreach ($calendars as $calendar)
                     <li>
                         <span class="bar"><a href="{{ $calendar->link }}" target="_blank">{{ $calendar->location }}</a></span>
-                        <span class="location">{{ $calendar->city }}</span>
-                        <span class="date">{{ $calendar->dateConcert }}</span></li>
+                        <span class="location">
+                           @if(app()->getLocale()=='fr' ){!! $calendar->fr_city !!} 
+                @elseif(app()->getLocale()=='nl'){!! $calendar->nl_city !!} 
+                @else {!! $calendar->en_city !!} 
+                @endif
+              </span>
+                        <span class="date">  @if(app()->getLocale()=='fr' ){!! $calendar->fr_dateConcert !!} 
+                @elseif(app()->getLocale()=='nl'){!! $calendar->nl_dateConcert !!} 
+                @else {!! $calendar->en_dateConcert !!} 
+                @endif</span></li>
                        
                   @endforeach
                       

@@ -305,44 +305,49 @@ header .language-switcher span:last-child:after {
 
 #section3 {
     background-color: var(--orange-dark);
+    padding: 40px 0 40px 0;
+}
+
+#section4 {
+    background-color: #E23000;
     padding: 40px 0 80px 0;
 }
 
-#section3 .calendar-table {
+#section4 .calendar-table {
     width: 100%;
 }
 
-#section3 .calendar-table li {
+#section4 .calendar-table li {
     border-bottom: 1px solid #fff;
     display: flex;
     color: #fff;
 }
 
-#section3 .calendar-table li a {
+#section4 .calendar-table li a {
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-#section3 .calendar-table li span {
+#section4 .calendar-table li span {
     padding: 10px 0;
 }
 
-#section3 .calendar-table li span.bar {
+#section4 .calendar-table li span.bar {
     width: 30%;
 }
 
-#section3 .calendar-table li span.location {
+#section4 .calendar-table li span.location {
     width: 30%;
     text-transform: uppercase;
 }
 
-#section3 .calendar-table li span.date {
+#section4 .calendar-table li span.date {
     width: 40%;
     text-align: right;
 }
 
-#section3 .vinyl-box {
+#section4 .vinyl-box {
     background-color: var(--red);
     padding: 30px;
     text-align: center;
@@ -388,32 +393,32 @@ header .language-switcher span:last-child:after {
     border-bottom: 1px solid #fff;
 }
 
-#section3 .calendar {
+#section4 .calendar {
     display: flex;
     margin-bottom: 30px;
     justify-content: space-between;
 }
 
-#section3 .calendar .calendar-about {
+#section4 .calendar .calendar-about {
     width: 45%;
     align-self: center;
     color: #fff;
 }
 
-#section3 .calendar .calendar-about p {
+#section4 .calendar .calendar-about p {
     font-size: 15px;
     line-height: 20px;
     font-weight: 200;
 }
 
-#section3 .calendar .calendar-about h2 {
+#section4 .calendar .calendar-about h2 {
     font-size: 28px;
     text-transform: uppercase;
     margin-bottom: 30px;
     font-weight: 900;
 }
 
-#section3 .calendar .calendar-table {
+#section4 .calendar .calendar-table {
     width: 50%;
     align-self: center;
 }
