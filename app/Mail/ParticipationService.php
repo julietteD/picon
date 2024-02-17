@@ -27,7 +27,7 @@ class ParticipationService extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'YES',
+            subject: 'PICON LIVE',
         );
         
     }
