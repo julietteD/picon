@@ -83,23 +83,8 @@
                     </div>
                 @endif
 
-                    @if(isset($reply)) 
-
-                        <div class="successBox">
-                            <div class="successInside">
-                                <div class="successInsideContent">
-
-                                    <h2>{{ __('Ta participation est bien enregistrée !') }}</h2>
-                                    <h4>{{ __('YellowStraps & Morgan Showcase • Jeudi 4 avril • Bruxelles') }}</h4>
-                                    <p>{{ __('Merci pour ta participation au concours Picon Live. Un e-mail de confirmation vient de t’être envoyé ! Le tirage au sort est prévu le 28 mars.') }}</p>
-                                    <a href="{{ route('home')}}#section3" class="cta light-cta">Mais avant, retrouve-nous aux Picon Live Vinyl Sessions</a>
-                                    
-                                </div>
-                            </div>
-                        </div>
+                   
                 
-                    @else
-
 
                     <form method="POST" action="{{ route('subscribe')}}">
                 
@@ -151,7 +136,7 @@
                         <p class="advert">{{ __('Concours ouvert du 19 février au 27 mars 23h59') }}</p></div>
 
                 </form>
-                @endif
+             
 
 
             </div>
@@ -166,7 +151,20 @@
 
     </div>
 </section>
+ @if(isset($reply)) 
 
+                        <div class="successBox">
+                            <div class="successInside">
+                                <div class="successInsideContent">
+
+                                    <h2>{{ __('Ta participation est bien enregistrée !') }}</h2>
+                                    <h4>{{ __('YellowStraps & Morgan Showcase • Jeudi 4 avril • Bruxelles') }}</h4>
+                                    <p>{{ __('Merci pour ta participation au concours Picon Live. Un e-mail de confirmation vient de t’être envoyé ! Le tirage au sort est prévu le 28 mars.') }}</p>
+                                    <a href="{{ route('home')}}#section3" class="cta light-cta">{{ __('Mais avant, retrouve-nous aux Picon Live Vinyl Sessions') }}</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
 
 <section id="section3">
 	 <div class="wrapper">

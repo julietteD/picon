@@ -60,7 +60,7 @@ class ParticipationController extends Controller
             'firstname'=> 'required',
             'lastname'=> 'required',
             'language'=> 'in:fr,nl,en',
-            'email' => 'required|email',
+            'email' => 'required|email|unique',
             'question'=> 'required',
             'persons'=> 'required',
            ]);
