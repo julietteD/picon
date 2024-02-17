@@ -304,7 +304,7 @@ header .language-switcher span:last-child:after {
 }
 
 #section3 {
-    background-color: var(--orange-dark);
+    background-color: var(--orange);
     padding: 40px 0 40px 0;
 }
 
@@ -359,7 +359,6 @@ header .language-switcher span:last-child:after {
 
 #section3 .recipe {
     position: relative;
-    margin-bottom: 50px;
 }
 
 #section3 .hover-content {
