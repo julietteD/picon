@@ -192,8 +192,10 @@
             </div>
         </div>
 
-
-
+</div>
+</section>
+<section id="section4">
+ <div class="wrapper">
         <div class="calendar">
             <div class="calendar-about">
               @if(app()->getLocale()=='fr' ){!! $content->fr_body6 !!} 

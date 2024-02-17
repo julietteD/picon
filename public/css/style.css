@@ -177,6 +177,10 @@ header .language-switcher span:last-child:after {
     margin-top: 30px;
 }
 
+#section1 .programme p {
+    line-height: 24px;
+}
+
 #section1 .content-text h2 {
     color: #fff;
     line-height: 35px;
@@ -301,7 +305,7 @@ header .language-switcher span:last-child:after {
 
 #section3 {
     background-color: var(--orange-dark);
-    padding: 40px 0;
+    padding: 40px 0 80px 0;
 }
 
 #section3 .calendar-table {
@@ -370,6 +374,10 @@ header .language-switcher span:last-child:after {
     margin: 0 auto;
 }
 
+#section3 .content-text p {
+    line-height: 24px;
+}
+
 #section3 .content-text h3 {
     text-transform: uppercase;
     font-size: 28px;
@@ -396,6 +404,13 @@ header .language-switcher span:last-child:after {
     font-size: 15px;
     line-height: 20px;
     font-weight: 200;
+}
+
+#section3 .calendar .calendar-about h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 900;
 }
 
 #section3 .calendar .calendar-table {
@@ -441,7 +456,7 @@ footer {
 
 footer .inside {
     background-color: var(--orange);
-    padding: 50px;
+    padding: 50px 40px 30px;
 }
 
 footer .inside .foot-logo {
