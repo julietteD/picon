@@ -166,7 +166,7 @@
 
     </div>
 </section>
-<div id="bandeau"></div>
+
 
 <section id="section3">
 	 <div class="wrapper">
@@ -222,7 +222,7 @@
         </div>
      </div>
 </section>
-
+<div id="bandeau"></div>
 
 </div>
 </div>
