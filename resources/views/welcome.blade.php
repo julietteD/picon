@@ -165,7 +165,7 @@
                                 </div>
                             </div>
                         </div>
-
+@endif
 <section id="section3">
 	 <div class="wrapper">
 
