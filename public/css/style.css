@@ -649,13 +649,13 @@ footer .warning {
 @media (max-width: 700px) {
     #section3 .calendar,
     #section2 .columns,
-    #section1 .hover-content {
+    #section1 .mainVideo {
         display: block;
     }
     #section3 .calendar .calendar-about,
     #section2 .columns .showcase-pict,
-    #section1 .hover-content .hover-content,
-    #section1 .hover-content .video {
+    #section1 .mainVideo .hover-content,
+    #section1 .mainVideo .video {
         width: 100%;
         margin-bottom: 20px;
     }
