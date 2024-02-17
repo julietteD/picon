@@ -87,10 +87,21 @@ class ParticipationController extends Controller
         $participation->newsletter = $request->input('newsletter');
         $participation->marketing = $request->input('marketing');
 
+   
+        try {
+            $saved = $participation->save();
+          } catch (Illuminate\Database\QueryException $e){
+            $errorCode = $e->errorInfo[1];
+            if($errorCode == 1062){
+                return 'Duplicate Email';
+            }
+          }
 
+
+    
           //Once validated, process the mail
-          if (!empty($validatedData)) {
-            $participation->save();
+          if (!empty($validatedData) && $saved) {
+           
             $formData = [
                 'language' => $request->input('language'),
                 'email' => $request->input('email'),
