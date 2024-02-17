@@ -73,6 +73,7 @@
                 @if ($errors->any())
                 <script>
                    document.getElementById("section2").scrollIntoView();
+                   console.log('section2');
                 </script>
                     <div class="alert alert-danger">
                         <ul>

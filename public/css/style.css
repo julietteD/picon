@@ -168,6 +168,7 @@ header .language-switcher span:last-child:after {
 #section1 .programme {
     color: #fff;
     margin-bottom: 20px;
+    opacity: 0
 }
 
 #section1 .programme h4 {
