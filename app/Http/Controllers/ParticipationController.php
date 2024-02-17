@@ -60,7 +60,7 @@ class ParticipationController extends Controller
             'firstname'=> 'required',
             'lastname'=> 'required',
             'language'=> 'in:fr,nl,en',
-            'email' => 'required|email|unique',
+            'email' => 'required|email',
             'question'=> 'required',
             'persons'=> 'required',
            ]);
@@ -87,10 +87,10 @@ class ParticipationController extends Controller
         $participation->newsletter = $request->input('newsletter');
         $participation->marketing = $request->input('marketing');
 
-        $participation->save();
 
           //Once validated, process the mail
           if (!empty($validatedData)) {
+            $participation->save();
             $formData = [
                 'language' => $request->input('language'),
                 'email' => $request->input('email'),
