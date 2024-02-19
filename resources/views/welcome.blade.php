@@ -138,7 +138,7 @@
                         </label>
                 </fieldset>
                         @csrf
-                        <div style="text-align:center"><input type="submit" value="{{ __('Tente ta chance') }}" class="cta">
+                        <div style="text-align:center"><input type="submit" value="{{ __('tente ta chance') }}" class="cta">
                         <p class="advert">{{ __('Concours ouvert du 19 février au 27 mars 23h59') }}</p></div>
 
                 </form>
