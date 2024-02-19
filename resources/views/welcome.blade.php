@@ -21,9 +21,10 @@
             
         </div>
         <div class="mainVideo">
-        
+
           <div class="video">
-                <video autoplay loop muted controls style="width:100%">
+                <video autoplay loop muted controls style="width:100%"
+                 poster="{{ asset('img/poster.png') }}" >
                 <source src="{{ asset('img/MOTION_STORY_PICON.mp4') }}"  type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
@@ -123,7 +124,7 @@
 <span>
                             @if(app()->getLocale()=='fr' ) J’accepte la <a href="{{route('privacy')}}">Politique de confidentialité</a>
                             @elseif(app()->getLocale()=='nl') Ik ga akkoord met het  <a href="{{route('privacy')}}">privacybeleid</a>
-                            @else  I agree with the <a href="{{route('privacy')}}">privacy Policy</a>
+                            @else  I agree with the <a href="{{route('privacy')}}">privacy policy</a>
                             @endif
             </span>
                             
