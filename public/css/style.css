@@ -160,9 +160,7 @@ header .language-switcher span:last-child:after {
     line-height: 24px;
 }
 
-#section1 .content-text p,
-#section1 .content-text a,
-#section1 .content-text h2 {
+#section1 .content-text a {
     opacity: 0;
 }
 
