@@ -21,7 +21,14 @@
             
         </div>
         <div class="mainVideo">
-          
+        
+          <div class="video">
+                <video autoplay loop muted controls style="width:100%">
+                <source src="{{ asset('img/MOTION_STORY_PICON.mp4') }}"  type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
             <div class="hover-content">
                 <div class="content-text">
                     <h2>  @if(app()->getLocale()=='fr' ){!! $content->fr_title2 !!} 
@@ -44,12 +51,7 @@
                     <a href="#section2" class="cta light-cta">{{ __('Inscris-toi au showcase') }}</a>
                  </div>
             </div>
-              <div class="video">
-              <video autoplay loop muted controls style="width:100%">
-            <source src="{{ asset('img/MOTION_STORY_PICON.mp4') }}"  type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-              </div>
+            
         </div>
 
     

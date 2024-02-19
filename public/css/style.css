@@ -132,13 +132,12 @@ header .language-switcher span:last-child:after {
 }
 
 #section1 .mainVideo {
-    /* position: relative; */
     margin-bottom: 50px;
     display: flex;
+    flex-direction: row-reverse;
 }
 
 #section1 .hover-content {
-    /* position: absolute; */
     width: 55%;
     text-align: left;
     height: 100%;
@@ -152,7 +151,6 @@ header .language-switcher span:last-child:after {
 #section1 .content-text {
     align-self: center;
     color: #fff;
-    /* width: 37%; */
     padding-left: 5%;
 }
 
