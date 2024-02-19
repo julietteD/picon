@@ -253,7 +253,7 @@
          <fieldset class="py-2">
             <div class="form-group">
                 <label>Body 7</label>
-                <textarea required class="form-control wysiwyg" name="nl_body7">@if(!empty($content->nl_body7)){{$content->fr_body7}}@endif</textarea>
+                <textarea required class="form-control wysiwyg" name="nl_body7">@if(!empty($content->nl_body7)){{$content->nl_body7}}@endif</textarea>
             </div>
         </fieldset>
            
