@@ -120,7 +120,7 @@
                            
 <span>
                             @if(app()->getLocale()=='fr' ) J’accepte la <a href="{{route('privacy')}}">Politique de confidentialité</a>
-                            @elseif(app()->getLocale()=='nl') I agree with the <a href="{{route('privacy')}}">privacy Policy</a>
+                            @elseif(app()->getLocale()=='nl') Ik ga akkoord met het  <a href="{{route('privacy')}}">privacybeleid</a>
                             @else  I agree with the <a href="{{route('privacy')}}">privacy Policy</a>
                             @endif
             </span>
