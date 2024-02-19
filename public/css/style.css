@@ -128,7 +128,7 @@ header .language-switcher span:last-child:after {
 }
 
 #section1 .video {
-    width: 50%;
+    width: 45%;
 }
 
 #section1 .mainVideo {
@@ -139,13 +139,14 @@ header .language-switcher span:last-child:after {
 
 #section1 .hover-content {
     /* position: absolute; */
-    width: 45%;
+    width: 55%;
     text-align: left;
     height: 100%;
     vertical-align: middle;
     top: 0;
     left: 0;
     margin-right: 5%;
+    align-self: center;
 }
 
 #section1 .content-text {

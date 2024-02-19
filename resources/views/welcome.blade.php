@@ -44,7 +44,12 @@
                     <a href="#section2" class="cta light-cta">{{ __('Inscris-toi au showcase') }}</a>
                  </div>
             </div>
-              <div class="video"><img src="{{ asset('img/video.png') }}" /></div>
+              <div class="video">
+              <video autoplay style="width:100%">
+            <source src="{{ asset('img/MOTION_STORY_PICON.mp4') }}"  type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+              </div>
         </div>
 
     
