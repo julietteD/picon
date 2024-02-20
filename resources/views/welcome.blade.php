@@ -23,7 +23,7 @@
         <div class="mainVideo">
 
           <div class="video">
-                <video autoplay loop muted controls style="width:100%"
+                <video autoplay loop muted playsinline style="width:100%"
                  poster="{{ asset('img/poster.png') }}" >
                 <source src="{{ asset('img/MOTION_STORY_PICON.mp4') }}"  type="video/mp4">
                 Your browser does not support the video tag.
