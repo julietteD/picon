@@ -271,9 +271,10 @@ header .language-switcher span:last-child:after {
     font-size: 15px;
     padding: 10px;
     width: 100%;
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+    appearance: none;*/
+    background-color: #fff;
 }
 
 .selectWrapper {
