@@ -271,6 +271,9 @@ header .language-switcher span:last-child:after {
     font-size: 15px;
     padding: 10px;
     width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .selectWrapper {
@@ -659,7 +662,7 @@ footer .warning {
     #section4 .calendar .calendar-about,
     #section4 .calendar .calendar-table {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
     #section3 .calendar .calendar-table,
     #section2 .columns .showcase-form {
