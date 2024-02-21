@@ -34,7 +34,6 @@ src="https://www.facebook.com/tr?id=320986017096416&ev=PageView
 		<title>PICON</title>
 		<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/css/datepicker.min.css">
-		<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f0e14da4-ebdc-484f-b4b2-a19f210eec45" data-blockingmode="auto" type="text/javascript"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
