@@ -39,8 +39,18 @@ src="https://www.facebook.com/tr?id=320986017096416&ev=PageView
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker.min.js"></script>
+		<script>
+		function scrollToTargetAdjusted() {
+    var element = document.getElementById('section2');
+    var headerOffset = 45;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-		<script src="{{ asset('js/front.js') }}"></script>
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
+};</script>
 </head>
 <body>
 
@@ -62,6 +72,7 @@ src="https://www.facebook.com/tr?id=320986017096416&ev=PageView
 		
 	</div>
 	
+		<script src="{{ asset('js/front.js') }}"></script>
 
 </body>
 </html>
