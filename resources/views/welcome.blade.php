@@ -87,7 +87,7 @@
                                 
                                      @if ($errors->has('birthdate')) 
                                         @if(app()->getLocale()=='fr' ) 
-                                        <li>Vous devez avoir plus de 18 ans</li>
+                                        <li>La date de naissance doit être antérieur à 18 ans</li>
                                         @elseif(app()->getLocale()=='nl' ) 
                                         <li>The birthdate field must be a date before -18 years.</li>
                                         @else
@@ -98,7 +98,7 @@
 
                                      @if ($errors->has('email')) 
                                         @if(app()->getLocale()=='fr' ) 
-                                        <li>The email has already been taken.</li>
+                                        <li>Cet email a déjà été utilisé.</li>
                                         @elseif(app()->getLocale()=='nl' ) 
                                         <li>The email has already been taken.</li>
                                         @else
@@ -137,7 +137,7 @@
                             <input type="text" placeholder="{{ __('birthdate') }}" required name="birthdate" value="{{ old('birthdate') }}">
                         
                             <div class="selectWrapper"><select name="question" required>
-                                    <option vlaue="" disabled selected>{{ __('Quels sont les ingrédients du Picon Bière ?') }}</option>
+                                    <option vlaue="" disabled selected>{{ __('Quels sont les ingrédients du Picon Bière ?*') }}</option>
                                     <option value="beer">{{ __('Du Picon. De la Bière. Et c’est tout.') }}</option>
                                     <option value="gin">{{ __('Du Picon. Du Gin. Et c’est tout.') }}</option>
                                     <option value="apple">{{ __('Du Picon. Du jus de pomme. Et c’est tout') }}</option>
@@ -150,9 +150,9 @@
                             <input type="checkbox" id="conditions" name="conditions" value="conditions" required />
                            
 <span>
-                            @if(app()->getLocale()=='fr' ) J’accepte la <a href="{{route('privacy')}}">Politique de confidentialité</a>
-                            @elseif(app()->getLocale()=='nl') Ik ga akkoord met het  <a href="{{route('privacy')}}">privacybeleid</a>
-                            @else  I agree with the <a href="{{route('privacy')}}">privacy policy</a>
+                            @if(app()->getLocale()=='fr' ) J’accepte la <a href="{{route('privacy')}}">Politique de confidentialité</a>.*
+                            @elseif(app()->getLocale()=='nl') Ik ga akkoord met het  <a href="{{route('privacy')}}">privacybeleid</a>.*
+                            @else  I agree with the <a href="{{route('privacy')}}">privacy policy</a> and the <a href="{{route('privacy')}}">terms and conditions of the contest</a>.*
                             @endif
             </span>
                             
@@ -160,7 +160,7 @@
 
                          <label class="checkbox">
                             <input type="checkbox" value="1" id="marketing" name="marketing" value="marketing"  />
-                            <span>{{ __('J’accèpte l’utilisation des données personnelles à des fins marketing et commerciales') }}</span>
+                            <span>{{ __('J’accèpte l’utilisation des données personnelles à des fins marketing et commerciales') }}*</span>
                         </label>
 
                          <label class="checkbox" style="display:none">
