@@ -36,10 +36,7 @@ fbq('track', 'PageView');
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker.min.js"></script>
-		<script>
-		function scrollToTargetAdjusted() {
-       document.getElementById("section2").scrollIntoView(), 1000
-		};</script>
+		
 		<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f0e14da4-ebdc-484f-b4b2-a19f210eec45" data-blockingmode="auto" type="text/javascript"></script>
 
 </head>
