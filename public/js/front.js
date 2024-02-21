@@ -13,5 +13,5 @@ ScrollTrigger.create({
 
 const elem = document.querySelector('input[name="birthdate"]');
 const datepicker = new Datepicker(elem, {
-    format: 'yyyy-mm-dd',
+    format: 'dd-mm-yyyy',
 });
