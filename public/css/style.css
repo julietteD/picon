@@ -181,15 +181,15 @@ header .language-switcher span:last-child:after {
 
 #section1 .content-text h2 {
     color: #fff;
-    line-height: 35px;
-    font-size: 30px;
+    line-height: 45px;
+    font-size: 38px;
     margin-bottom: 60px;
     text-transform: uppercase;
     font-weight: 900;
 }
 
 #section1 .content-text h2 small {
-    font-size: 24px;
+    font-size: 32px;
 }
 
 #section1 .content-text p {
