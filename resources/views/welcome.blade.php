@@ -242,7 +242,6 @@
 </div>
 	  @if ($errors->any())
                 <script>
-                console.log(errors)
                  scrollToTargetAdjusted();
                 </script>
                 @endif
