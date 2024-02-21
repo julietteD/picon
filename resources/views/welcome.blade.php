@@ -273,9 +273,8 @@
 </div>
 </div>
        <script>
-	
-         
          var elementExists = document.getElementById("alert");
+         console.log(elementExists);
        // if(elementExists){  document.addEventListener("DOMContentLoaded", scrollToTargetAdjusted());}
         if(elementExists){ scrollToTargetAdjusted()}
           
