@@ -137,7 +137,7 @@
                             <input type="text" placeholder="{{ __('birthdate') }}" required name="birthdate" value="{{ old('birthdate') }}">
                         
                             <div class="selectWrapper"><select name="question" required>
-                                    <option vlaue="" disabled selected>{{ __('Quels sont les ingrédients du Picon Bière ?') }}*</option>
+                                    <option value="" disabled selected>{{ __('Quels sont les ingrédients du Picon Bière ?') }}*</option>
                                     <option value="beer">{{ __('Du Picon. De la Bière. Et c’est tout.') }}</option>
                                     <option value="gin">{{ __('Du Picon. Du Gin. Et c’est tout.') }}</option>
                                     <option value="apple">{{ __('Du Picon. Du jus de pomme. Et c’est tout') }}</option>
