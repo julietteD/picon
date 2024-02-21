@@ -79,10 +79,7 @@
             <div class="form">
 
                 @if ($errors->any())
-                <script>
-                 scrollToTargetAdjusted();
-                   console.log('section2');
-                </script>
+             
                     <div class="alert alert-danger">
                         <ul>
                             @foreach ($errors->all() as $error)
@@ -243,5 +240,10 @@
 
 </div>
 </div>
-	
+	  @if ($errors->any())
+                <script>
+                 scrollToTargetAdjusted();
+                   console.log('section2');
+                </script>
+                @endif
 @endsection
