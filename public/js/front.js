@@ -1,6 +1,6 @@
 const elem = document.querySelector('input[name="birthdate"]');
-const datepicker = new Datepicker(elem, {
-    format: 'yyyy-mm-dd',
+const datepicker = new datepicker(elem, {
+    format: 'dd-mm-yyyy',
 });
 
 function scrollToTargetAdjusted() {
