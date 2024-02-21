@@ -80,14 +80,42 @@
 
                 @if ($errors->any())
              
-                    <div class="alert alert-danger">
+                    <div class="alert alert-danger" id="alert">
+                   
                         <ul>
-                            @foreach ($errors->all() as $error)
+                           
+                                
+                                     @if ($errors->has('birthdate')) 
+                                        @if(app()->getLocale()=='fr' ) 
+                                        <li>Vous devez avoir plus de 18 ans</li>
+                                        @elseif(app()->getLocale()=='nl' ) 
+                                        <li>The birthdate field must be a date before -18 years.</li>
+                                        @else
+                                        <li>The birthdate field must be a date before -18 years.</li>
+                                        @endif
+                                    @endif
 
-                                @if(app()->getLocale()=='fr' && $error=="The birthdate field must be a date before -18 years.") test -18 fr @endif
 
-                                <li>- {{ $error }}</li>
-                            @endforeach
+                                     @if ($errors->has('email')) 
+                                        @if(app()->getLocale()=='fr' ) 
+                                        <li>The email has already been taken.</li>
+                                        @elseif(app()->getLocale()=='nl' ) 
+                                        <li>The email has already been taken.</li>
+                                        @else
+                                        <li>The email has already been taken.</li>
+                                        @endif
+                                    @endif
+
+                                    @if ($errors->has('question')) 
+                                        @if(app()->getLocale()=='fr' ) 
+                                        <li>The question field is required.</li>
+                                        @elseif(app()->getLocale()=='nl' ) 
+                                        <li>The question field is required.</li>
+                                        @else
+                                      <li>The question field is required.</li>
+                                        @endif
+                                    @endif
+                           
                         </ul>
                     </div>
                 @endif
@@ -109,7 +137,7 @@
                             <input type="text" placeholder="{{ __('birthdate') }}" required name="birthdate" value="{{ old('birthdate') }}">
                         
                             <div class="selectWrapper"><select name="question" required>
-                                    <option disabled selected>{{ __('Quels sont les ingrédients du Picon Bière ?') }}</option>
+                                    <option vlaue="" disabled selected>{{ __('Quels sont les ingrédients du Picon Bière ?') }}</option>
                                     <option value="beer">{{ __('Du Picon. De la Bière. Et c’est tout.') }}</option>
                                     <option value="gin">{{ __('Du Picon. Du Gin. Et c’est tout.') }}</option>
                                     <option value="apple">{{ __('Du Picon. Du jus de pomme. Et c’est tout') }}</option>
@@ -244,13 +272,10 @@
 </div>
 </div>
        <script>
-	  @if ($errors->any())
+	
          
-               
-         
-
-  document.addEventListener("DOMContentLoaded", scrollToTargetAdjusted());
-               
-                @endif
+         var elementExists = document.getElementById("alert");
+        if(elementExists){  document.addEventListener("DOMContentLoaded", scrollToTargetAdjusted());}
+          
                  </script>
 @endsection
