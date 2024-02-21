@@ -242,7 +242,10 @@
 </div>
 	  @if ($errors->any())
                 <script>
-                 scrollToTargetAdjusted();
+               
+         
+
+  document.addEventListener("DOMContentLoaded",   scrollToTargetAdjusted(););
                 </script>
                 @endif
 @endsection

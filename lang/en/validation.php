@@ -173,8 +173,13 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'birthdate' => [
+            'before' => 'The  :attribute field must be a simple date before :date.',
+        ]
+        
     ],
 
+   
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Attributes
