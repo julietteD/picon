@@ -59,7 +59,6 @@ class ParticipationController extends Controller
             'birthdate'=> 'required|date|before: -18 years',
             'firstname'=> 'required',
             'lastname'=> 'required',
-            'language'=> 'in:fr,nl,en',
             'email' => 'required|email|unique:participations',
             'question'=> 'required',
             'persons'=> 'required',
