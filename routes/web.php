@@ -63,6 +63,10 @@ Route::middleware('auth')->group(function () {
     Route::get('acontents/', [AdminController::class, 'editAcontent'])->name('admin.acontent.edit');
     Route::post('acontents/edit', [AdminController::class, 'editAcontentAction'])->name('admin.acontents.edit.action');
     
+    Route::get('ccontents/', [AdminController::class, 'editCcontent'])->name('admin.ccontent.edit');
+    Route::post('ccontents/edit', [AdminController::class, 'editCcontentAction'])->name('admin.ccontents.edit.action');
+
+
     Route::get('get_csv', [AdminController::class, 'get_csv'])->name('get_csv');
 });
 

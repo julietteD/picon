@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Participation;
 use App\Models\Content;
 use App\Models\Pcontent;
+use App\Models\Ccontent;
 use App\Models\Acontent;
 use App\Models\Calendar;
 use Illuminate\Http\Request;
@@ -230,6 +231,31 @@ class AdminController extends Controller
 
   }
   
+
+  /* Conditions CONTENT */
+  public function editCcontent()
+  {
+      $content = Ccontent::first();
+      return view('admin.ccontent', ['content' => $content]);
+  }
+  
+  public function editCcontentAction(Request $request)
+  {
+    
+      $content = false;
+      $content = Ccontent::first();
+     
+      $content->fr_body = $request->input('fr_body');
+      $content->en_body = $request->input('en_body');
+      $content->nl_body = $request->input('nl_body');
+     
+      $content->save();
+      Cache::flush();
+      return view('admin.ccontent', ['content' => $content]);
+
+  }
+
+
   public function get_csv(){
 
     $participations = Participation::get();

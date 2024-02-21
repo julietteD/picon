@@ -44,7 +44,6 @@ class ContentFactory extends Factory
             'fr_body7' => $this->faker->word(),
             'en_body7' => $this->faker->word(),
             'nl_body7' => $this->faker->word(),
-
         ];
     }
 
