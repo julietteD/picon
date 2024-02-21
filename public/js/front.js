@@ -1,8 +1,3 @@
-const elem = document.querySelector('input[name="birthdate"]');
-const datepicker = new datepicker(elem, {
-    format: 'dd-mm-yyyy',
-});
-
 function scrollToTargetAdjusted() {
     var element = document.getElementById('section2');
     var headerOffset = 45;
@@ -25,5 +20,9 @@ ScrollTrigger.create({
     animation: tl,
     start: "top center",
     trigger: "#section2",
+});
 
-})
+const elem = document.querySelector('input[name="birthdate"]');
+const datepicker = new datepicker(elem, {
+    format: 'dd-mm-yyyy',
+});
