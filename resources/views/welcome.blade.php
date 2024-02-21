@@ -99,7 +99,7 @@
                                         @if(app()->getLocale()=='fr' ) 
                                         <li>Cet email a déjà été utilisé.</li>
                                         @elseif(app()->getLocale()=='nl' ) 
-                                        <li>The email has already been taken.</li>
+                                        <li>De email is al in gebruik.</li>
                                         @else
                                         <li>The email has already been taken.</li>
                                         @endif
@@ -149,9 +149,9 @@
                             <input type="checkbox" id="conditions" name="conditions" value="conditions" required />
                            
 <span>
-                            @if(app()->getLocale()=='fr' ) J’accepte la <a href="{{route('privacy')}}">Politique de confidentialité</a>.*
-                            @elseif(app()->getLocale()=='nl') Ik ga akkoord met het  <a href="{{route('privacy')}}">privacybeleid</a>.*
-                            @else  I agree with the <a href="{{route('privacy')}}">privacy policy</a> and the <a href="{{route('privacy')}}">terms and conditions of the contest</a>.*
+                            @if(app()->getLocale()=='fr' ) J’accepte la <a href="{{route('privacy')}}">politique de confidentialité</a> et les <a href="{{route('conditions')}}">conditions du concours</a>.*
+                            @elseif(app()->getLocale()=='nl') Ik ga akkoord met het  <a href="{{route('privacy')}}">privacybeleid</a> en de <a href="{{route('conditions')}}">voorwaarden van de wedstrijd</a>.*
+                            @else  I agree with the <a href="{{route('privacy')}}">privacy policy</a> and the <a href="{{route('conditions')}}">terms and conditions of the contest</a>.*
                             @endif
             </span>
                             
@@ -214,14 +214,14 @@
                 <div class="content-text">
                     <h3>
                      @if(app()->getLocale()=='fr' ){!! $content->fr_title4 !!} 
-            @elseif(app()->getLocale()=='nl'){!! $content->nl_title4 !!} 
-            @else {!! $content->en_title4 !!} 
-            @endif 
-            </h3>
+                    @elseif(app()->getLocale()=='nl'){!! $content->nl_title4 !!} 
+                    @else {!! $content->en_title4 !!} 
+                    @endif 
+                    </h3>
                     @if(app()->getLocale()=='fr' ){!! $content->fr_body5 !!} 
-                @elseif(app()->getLocale()=='nl'){!! $content->nl_body5 !!} 
-                @else {!! $content->en_body5 !!} 
-                @endif
+                    @elseif(app()->getLocale()=='nl'){!! $content->nl_body5 !!} 
+                    @else {!! $content->en_body5 !!} 
+                    @endif
                 </div>
            
             </div>
@@ -248,7 +248,7 @@
                 @else {!! $calendar->en_city !!} 
                 @endif
               </span>
-                        <span class="date">  @if(app()->getLocale()=='fr' ){!! $calendar->fr_dateConcert !!} 
+                <span class="date">  @if(app()->getLocale()=='fr' ){!! $calendar->fr_dateConcert !!} 
                 @elseif(app()->getLocale()=='nl'){!! $calendar->nl_dateConcert !!} 
                 @else {!! $calendar->en_dateConcert !!} 
                 @endif</span></li>
