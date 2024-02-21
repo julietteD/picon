@@ -21,6 +21,8 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
  fbq('init', '320986017096416'); 
 fbq('track', 'PageView');
 </script>
+		<script src="{{ asset('js/front.js') }}"></script>
+
 <noscript>
  <img height="1" width="1" 
 src="https://www.facebook.com/tr?id=320986017096416&ev=PageView
@@ -59,7 +61,6 @@ src="https://www.facebook.com/tr?id=320986017096416&ev=PageView
 		
 	</div>
 	
-		<script src="{{ asset('js/front.js') }}"></script>
 
 </body>
 </html>
