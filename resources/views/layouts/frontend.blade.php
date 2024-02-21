@@ -41,15 +41,7 @@ src="https://www.facebook.com/tr?id=320986017096416&ev=PageView
 		<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker.min.js"></script>
 		<script>
 		function scrollToTargetAdjusted() {
-    var element = document.getElementById('section3');
-    var headerOffset = 45;
-    var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-    window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-    });
+   document.getElementById("section3").scrollIntoView();
 };</script>
 </head>
 <body>
