@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 	<head>
 	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -23,9 +23,7 @@ fbq('track', 'PageView');
 </script>
 
 <noscript>
- <img height="1" width="1" 
-src="https://www.facebook.com/tr?id=320986017096416&ev=PageView
-&noscript=1"/>
+ <img height="1" width="1" src="https://www.facebook.com/tr?id=320986017096416&ev=PageView&noscript=1"/>
 </noscript>
 <!-- End Meta Pixel Code -->
 		<meta charset="UTF-8">
@@ -40,10 +38,10 @@ src="https://www.facebook.com/tr?id=320986017096416&ev=PageView
 		<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker.min.js"></script>
 		<script>
 		function scrollToTargetAdjusted() {
+       document.getElementById("section2").scrollIntoView(), 1000
+		};</script>
+		<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f0e14da4-ebdc-484f-b4b2-a19f210eec45" data-blockingmode="auto" type="text/javascript"></script>
 
-       setTimeout( document.getElementById("section2").scrollIntoView(), 1000);
-
-};</script>
 </head>
 <body>
 
