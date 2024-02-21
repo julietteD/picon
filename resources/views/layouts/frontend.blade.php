@@ -21,7 +21,6 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
  fbq('init', '320986017096416'); 
 fbq('track', 'PageView');
 </script>
-		<script src="{{ asset('js/front.js') }}"></script>
 
 <noscript>
  <img height="1" width="1" 
@@ -40,6 +39,8 @@ src="https://www.facebook.com/tr?id=320986017096416&ev=PageView
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+				<script src="{{ asset('js/front.js') }}"></script>
+
 </head>
 <body>
 
