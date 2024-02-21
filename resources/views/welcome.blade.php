@@ -245,7 +245,7 @@
                
          
 
-  document.addEventListener("DOMContentLoaded",   scrollToTargetAdjusted(););
+  document.addEventListener("DOMContentLoaded",   scrollToTargetAdjusted());
                 </script>
                 @endif
 @endsection
