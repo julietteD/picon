@@ -89,8 +89,6 @@ class ParticipationController extends Controller
         $saved = $participation->save();
       
 
-
-    
           //Once validated, process the mail
           if (!empty($validatedData) && $saved) {
            

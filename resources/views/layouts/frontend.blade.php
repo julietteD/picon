@@ -42,7 +42,7 @@ src="https://www.facebook.com/tr?id=320986017096416&ev=PageView
 		<script>
 		function scrollToTargetAdjusted() {
 
-       setTimeout(  document.getElementById("section3").scrollIntoView(), 1000);
+       setTimeout( document.getElementById("section2").scrollIntoView(), 1000);
 
 };</script>
 </head>
