@@ -160,7 +160,7 @@
 
                          <label class="checkbox">
                             <input type="checkbox" value="1" id="marketing" name="marketing" value="marketing"  />
-                            <span>{{ __('J’accèpte l’utilisation des données personnelles à des fins marketing et commerciales') }}*</span>
+                            <span>{{ __('J’accèpte l’utilisation des données personnelles à des fins marketing et commerciales')}}*</span>
                         </label>
 
                          <label class="checkbox" style="display:none">
@@ -169,7 +169,8 @@
                         </label>
                 </fieldset>
                         @csrf
-                        <div style="text-align:center"><input type="submit" value="{{ __('tente ta chance') }}" class="cta">
+                        
+                        <div style="text-align:center"><small style="font-size:12px; margin-bottom:10px; display: inline-block;">{{ __('*mandatory fields') }} </small><br/><input type="submit" value="{{ __('tente ta chance') }}" class="cta">
                         <p class="advert">{{ __('Concours ouvert du 19 février au 27 mars 23h59') }}</p></div>
 
                 </form>
@@ -275,7 +276,7 @@
 	
          
          var elementExists = document.getElementById("alert");
-        if(elementExists){  document.addEventListener("DOMContentLoaded", scrollToTargetAdjusted());}
+       // if(elementExists){  document.addEventListener("DOMContentLoaded", scrollToTargetAdjusted());}
         if(elementExists){ scrollToTargetAdjusted()}
           
                  </script>
