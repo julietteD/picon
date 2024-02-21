@@ -89,9 +89,9 @@
                                         @if(app()->getLocale()=='fr' ) 
                                         <li>La date de naissance doit être antérieur à 18 ans</li>
                                         @elseif(app()->getLocale()=='nl' ) 
-                                        <li>The birthdate field must be a date before -18 years.</li>
+                                        <li>De geboortedatum moet voorafgaand zijn aan 18 yaar.</li>
                                         @else
-                                        <li>The birthdate field must be a date before -18 years.</li>
+                                        <li>The birthdate field must be a date before 18 years.</li>
                                         @endif
                                     @endif
 

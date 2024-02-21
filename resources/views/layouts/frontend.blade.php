@@ -63,10 +63,7 @@ fbq('track', 'PageView');
 		<script src="{{ asset('js/front.js') }}"></script>
  <script>
          var elementExists = document.getElementById("alert");
-         console.log(elementExists);
-       // if(elementExists){  document.addEventListener("DOMContentLoaded", scrollToTargetAdjusted());}
         if(elementExists){  document.getElementById("section2").scrollIntoView()};
-          window.scrollTo(0, document.getElementById('bandeau').offsetTop);
                  </script>
 </body>
 </html>
