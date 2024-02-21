@@ -41,7 +41,9 @@ src="https://www.facebook.com/tr?id=320986017096416&ev=PageView
 		<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker.min.js"></script>
 		<script>
 		function scrollToTargetAdjusted() {
-   document.getElementById("section3").scrollIntoView();
+
+       setTimeout(  document.getElementById("section3").scrollIntoView(), 1000);
+
 };</script>
 </head>
 <body>
