@@ -66,7 +66,7 @@ fbq('track', 'PageView');
          console.log(elementExists);
        // if(elementExists){  document.addEventListener("DOMContentLoaded", scrollToTargetAdjusted());}
         if(elementExists){  document.getElementById("section2").scrollIntoView()};
-          window.scrollTo(0, document.getElementById('section2').offsetTop);
+          window.scrollTo(0, document.getElementById('bandeau').offsetTop);
                  </script>
 </body>
 </html>
