@@ -84,9 +84,9 @@
                         <ul>
                             @foreach ($errors->all() as $error)
 
-                           @if(app()->getLocale()=='fr' && $error=="The birthdate field must be a date before -18 years.") test -18 fr @endif
+                                @if(app()->getLocale()=='fr' && $error=="The birthdate field must be a date before -18 years.") test -18 fr @endif
 
-                                <li>{{ $error }}</li>
+                                <li>- {{ $error }}</li>
                             @endforeach
                         </ul>
                     </div>
