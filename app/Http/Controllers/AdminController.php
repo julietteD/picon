@@ -242,9 +242,17 @@ class AdminController extends Controller
   public function editCcontentAction(Request $request)
   {
     
-      $content = false;
-      $content = Ccontent::first();
+    $newId = $request->input('id');
+    $content = false;
+    if ($newId) {
+        $content = Ccontent::first();
      
+    }
+    if (!$content) {
+        $content = new Ccontent();
+    }
+
+    
       $content->fr_body = $request->input('fr_body');
       $content->en_body = $request->input('en_body');
       $content->nl_body = $request->input('nl_body');

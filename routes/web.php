@@ -24,6 +24,7 @@ Route::get('language/{locale}', [ParticipationController::class, 'setLocaleLang'
 Route::get('/', [ParticipationController::class, 'welcome'])->name('home');
 Route::get('/privacy', [ParticipationController::class, 'privacy'])->name('privacy');
 Route::get('/about', [ParticipationController::class, 'about'])->name('about');
+Route::get('/conditions', [ParticipationController::class, 'conditions'])->name('conditions');
 
 
 Route::post('subscribe', [ParticipationController::class, 'participate'])->name('subscribe');

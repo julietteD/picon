@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Content;
 use App\Models\Pcontent;
+use App\Models\Ccontent;
 use App\Models\Acontent;
 use App\Models\Calendar;
 use App\Models\Participation;
@@ -39,6 +40,11 @@ class ParticipationController extends Controller
     public function privacy(){
         $content = Pcontent::first();
         return view('privacy', ['content' => $content]);
+
+    }
+    public function conditions(){
+        $content = Ccontent::first();
+        return view('conditions', ['content' => $content]);
 
     }
     public function about(){

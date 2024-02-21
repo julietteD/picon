@@ -19,6 +19,8 @@
                     <ul>
                         <li><a href="{{route('about')}}">{{ __('A propos') }}</a></li>
                         <li><a href="{{route('privacy')}}">{{ __('Privacy') }}</a></li>
+                         <li><a href="{{route('conditions')}}">{{ __('Conditions') }}</a></li>
+
                     </ul>
                 </div>
             </div>

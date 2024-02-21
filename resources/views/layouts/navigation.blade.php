@@ -27,6 +27,9 @@
                         <x-nav-link :href="route('admin.acontent.edit')" :active="request()->routeIs('admin.acontent')">
                         {{ __('About') }}
                     </x-nav-link>
+                          <x-nav-link :href="route('admin.ccontent.edit')" :active="request()->routeIs('admin.ccontent')">
+                        {{ __('Conditions') }}
+                    </x-nav-link>
                      <x-nav-link :href="route('admin.calendars')" :active="request()->routeIs('admin.calendars')">
                         {{ __('Calendar') }}
                     </x-nav-link>
