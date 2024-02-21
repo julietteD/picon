@@ -242,8 +242,8 @@
 </div>
 	  @if ($errors->any())
                 <script>
+                console.log(errors)
                  scrollToTargetAdjusted();
-                   console.log('section2');
                 </script>
                 @endif
 @endsection
