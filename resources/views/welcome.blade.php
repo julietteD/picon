@@ -240,12 +240,14 @@
 
 </div>
 </div>
+       <script>
 	  @if ($errors->any())
-                <script>
+         
                
          
 
-  document.addEventListener("DOMContentLoaded",   scrollToTargetAdjusted());
-                </script>
+  document.addEventListener("DOMContentLoaded", scrollToTargetAdjusted());
+               
                 @endif
+                 </script>
 @endsection
