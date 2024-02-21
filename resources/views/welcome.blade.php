@@ -276,7 +276,7 @@
          var elementExists = document.getElementById("alert");
          console.log(elementExists);
        // if(elementExists){  document.addEventListener("DOMContentLoaded", scrollToTargetAdjusted());}
-        if(elementExists){  document.getElementById("section2").scrollIntoView()}
-          
+        if(elementExists){  document.getElementById("section2").scrollIntoView()};
+          window.scrollTo(0, document.getElementById('section2').offsetTop);
                  </script>
 @endsection
