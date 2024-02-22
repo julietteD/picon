@@ -142,7 +142,7 @@
                                     <option value="apple">{{ __('Du Picon. Du jus de pomme. Et c’est tout') }}</option>
                             </select></div>
                             
-                            <input type="text" name="persons" required placeholder="{{ __('Combien de personnes vont participer à ce concours?') }}"  value="{{ old('persons') }}">
+                            <input type="text" name="persons" required placeholder="{{ __('Combien de personnes vont participer à ce concours?') }}*"  value="{{ old('persons') }}">
 
              
                         <label class="checkbox">
@@ -159,7 +159,7 @@
 
                          <label class="checkbox">
                             <input type="checkbox" value="1" id="marketing" name="marketing" value="marketing"  />
-                            <span>{{ __('J’accèpte l’utilisation des données personnelles à des fins marketing et commerciales')}}*</span>
+                            <span>{{ __('J’accèpte l’utilisation des données personnelles à des fins marketing et commerciales')}}</span>
                         </label>
 
                          <label class="checkbox" style="display:none">
