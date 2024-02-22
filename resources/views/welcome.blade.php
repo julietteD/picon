@@ -86,9 +86,9 @@
                                 
                                      @if ($errors->has('birthdate')) 
                                         @if(app()->getLocale()=='fr' ) 
-                                        <li>La date de naissance doit être antérieur à 18 ans</li>
+                                        <li>Pour participer à ce concours, il est nécessaire d'avoir au moins 18 ans. </li>
                                         @elseif(app()->getLocale()=='nl' ) 
-                                        <li>De geboortedatum moet voorafgaand zijn aan 18 yaar.</li>
+                                        <li>Deelnemers moeten minstens 18 jaar oud zijn om deel te nemen aan deze wedstrijd.</li>
                                         @else
                                         <li>Participants must be at least 18 years old to enter this contest.</li>
                                         @endif
