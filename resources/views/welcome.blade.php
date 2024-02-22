@@ -90,7 +90,7 @@
                                         @elseif(app()->getLocale()=='nl' ) 
                                         <li>De geboortedatum moet voorafgaand zijn aan 18 yaar.</li>
                                         @else
-                                        <li>The birthdate field must be a date before 18 years.</li>
+                                        <li>Participants must be at least 18 years old to enter this contest.</li>
                                         @endif
                                     @endif
 
