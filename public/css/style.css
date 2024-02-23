@@ -679,6 +679,7 @@ footer .warning {
     .recipe .heart {
         position: absolute;
         margin-bottom: 30px;
+        top: 50px;
     }
     #section3 .content-text h3 {
         margin-top: 40px;
