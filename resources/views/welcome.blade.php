@@ -9,8 +9,9 @@
 
         <div class="recipe">
             <img class="bg-pict" src="{{ asset('img/imageSection3.png') }}" >
+            <img src="{{ asset('img/heart.svg') }}" class="heart" />
             <div class="hover-content">
-                <img src="{{ asset('img/heart.svg') }}" class="heart" />
+                
             
                 <div class="content-text">
                     <h3>

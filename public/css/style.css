@@ -677,8 +677,11 @@ footer .warning {
         width: 100%;
     }
     .recipe .heart {
-        position: relative;
+        position: absolute;
         margin-bottom: 30px;
+    }
+    #section3 .content-text h3 {
+        margin-top: 40px;
     }
     footer .inside .foot-legals {
         display: block;
