@@ -25,6 +25,7 @@ Route::get('/', [ParticipationController::class, 'welcome'])->name('home');
 Route::get('/privacy', [ParticipationController::class, 'privacy'])->name('privacy');
 Route::get('/about', [ParticipationController::class, 'about'])->name('about');
 Route::get('/conditions', [ParticipationController::class, 'conditions'])->name('conditions');
+Route::get('/email', [ParticipationController::class, 'emailTest'])->name('emailTest');
 
 
 Route::post('subscribe', [ParticipationController::class, 'participate'])->name('subscribe');

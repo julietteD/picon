@@ -51,7 +51,16 @@ class ParticipationController extends Controller
         $content = Acontent::first();
         return view('about', ['content' => $content]);
     }
-
+    public function emailTest(): View{
+        $formData = [
+            'language' => 'fr',
+            'email' => 'juliette.delpech@gmail.com',
+            'firstname' => 'juliette',
+            'lastname' => 'test'
+        ];
+        $recipientEmail = 'juliette.delpech@gmail.com';
+        Mail::to($recipientEmail)->send(new ParticipationService($formData));
+    }
     public function participate(Request $request): View
     {
         /*Mail::raw('Hello, this is a test mail!', function ($message) {
