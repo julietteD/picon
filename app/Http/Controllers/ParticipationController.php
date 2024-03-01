@@ -60,7 +60,9 @@ class ParticipationController extends Controller
         ];
         $recipientEmail = 'marie.lepevedic@digizik.com';
         Mail::to($recipientEmail)->send(new ParticipationService($formData));
-        return view('welcome');
+        $content = Content::first();
+        $calendars = Calendar::orderBy('orderElt')->get();
+        return view('welcome', ['content' => $content, 'calendars' => $calendars]);
     }
     public function participate(Request $request): View
     {
