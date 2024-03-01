@@ -51,7 +51,7 @@ class ParticipationController extends Controller
         $content = Acontent::first();
         return view('about', ['content' => $content]);
     }
-    public function emailTest(): View{
+    public function emailTest(){
         $formData = [
             'language' => 'fr',
             'email' => 'juliette.delpech@gmail.com',
@@ -60,6 +60,7 @@ class ParticipationController extends Controller
         ];
         $recipientEmail = 'juliette.delpech@gmail.com';
         Mail::to($recipientEmail)->send(new ParticipationService($formData));
+        return view('welcome');
     }
     public function participate(Request $request): View
     {
