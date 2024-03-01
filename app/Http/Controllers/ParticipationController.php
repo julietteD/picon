@@ -54,11 +54,11 @@ class ParticipationController extends Controller
     public function emailTest(){
         $formData = [
             'language' => 'fr',
-            'email' => 'juliette.delpech@gmail.com',
+            'email' => 'marie.lepevedic@digizik.com',
             'firstname' => 'juliette',
             'lastname' => 'test'
         ];
-        $recipientEmail = 'juliette.delpech@gmail.com';
+        $recipientEmail = 'marie.lepevedic@digizik.com';
         Mail::to($recipientEmail)->send(new ParticipationService($formData));
         return view('welcome');
     }
