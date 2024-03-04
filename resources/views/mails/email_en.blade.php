@@ -7,10 +7,8 @@
 </head>
 
 <body>
-    <p>EN Hi {{ $formData['firstname'] }},</p>
-    <h1>A new message is received.</h1>
-
    
+    <img src='{{ $message->embed(public_path().'/img/email.png') }}'>
 </body>
 
 </html>
