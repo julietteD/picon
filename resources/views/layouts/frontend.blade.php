@@ -60,7 +60,7 @@ fbq('track', 'PageView');
 		
 	</div>
 	
-		<script src="{{ asset('js/front.js') }}"></script>
+		<script src="{{ asset('js/front.js') }}?v=3"></script>
  <script>
          var elementExists = document.getElementById("alert");
         if(elementExists){  document.getElementById("section2").scrollIntoView()};

@@ -10,3 +10,8 @@ ScrollTrigger.create({
     start: "top center",
     trigger: "#section2",
 });
+/*
+const elem = document.querySelector('input[name="birthdate"]');
+const datepicker = new Datepicker(elem, {
+    format: 'dd-mm-yyyy',
+});*/
