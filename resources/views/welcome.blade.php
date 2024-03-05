@@ -198,7 +198,7 @@
                                     <h4>{{ __('YellowStraps & Morgan Showcase • Jeudi 4 avril • Bruxelles') }}</h4>
                                     <p>{{ __('Merci pour ta participation au concours Picon Live. Un e-mail de confirmation vient de t’être envoyé ! Le tirage au sort est prévu le 28 mars.') }}</p>
                                     <a href="{{ route('home')}}#section4" class="cta light-cta">{{ __('Mais avant, retrouve-nous aux Picon Live Vinyl Sessions') }}</a>
-                                    
+                                    <p style="font-size: 14px; margin-top: 20px">{{ __('Alcohol abuse harms your health') }}</p>
                                 </div>
                             </div>
                         </div>
