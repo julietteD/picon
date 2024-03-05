@@ -650,6 +650,12 @@ footer .warning {
     #section4 .calendar-table li {
         font-size: 12px;
     }
+    #section1 .content-text h2 {
+        font-size: 33px;
+    }
+    #section1 .content-text h2 small {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 700px) {
