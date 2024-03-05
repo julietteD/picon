@@ -9,8 +9,8 @@
 <body>
    
 <body>
-   <a href="https://piconlive.piconaperitif.com/" alt="picon"><img width="648" height="1834" src="https://piconlive.piconaperitif.com/img/PICON_Confirmation_email_FR.png" alt="picon"></a>
-  <span>&nbsp; </span></body>
+   <a href="https://piconlive.piconaperitif.com/" ><img width="648" height="1834" src="https://piconlive.piconaperitif.com/img/PICON_Confirmation_email_FR.png" ></a>
+  </body>
 
 </body>
 
