@@ -38,7 +38,7 @@ fbq('track', 'PageView');
 		<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker.min.js"></script>
 		
 		<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f0e14da4-ebdc-484f-b4b2-a19f210eec45" data-blockingmode="auto" type="text/javascript"></script>
-
+ 
 </head>
 <body>
 
