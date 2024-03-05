@@ -16,7 +16,7 @@
         <td align="center">
         <div>
             <h3 class="panel-title navbar-brand" style="font-size:30px; color:red">Ta participation est bien enregistrée !</h3><br/>
-             <a href="https://piconlive.piconaperitif.com/" ><img width="648" height="1834" src="https://piconlive.piconaperitif.com/img/PICON_Confirmation_email_FR.png" ></a>
+             <a href="https://piconlive.piconaperitif.com/" ><img width="648" height="1834" src="https://piconlive.piconaperitif.com/img/PICON_Confirmation_email_FR_2.png" ></a>
         </div>
         </td>
     </tr>
