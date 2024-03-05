@@ -7,10 +7,21 @@
 </head>
 
 <body>
+
+<div class='container' text-align="center">
    
-<body>
-   <a href="https://piconlive.piconaperitif.com/" ><img width="648" height="1834" src="https://piconlive.piconaperitif.com/img/PICON_Confirmation_email_FR.png" ></a>
-  </body>
+   
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td align="center">
+        <div>
+            <h3 class="panel-title navbar-brand" style="font-size:30px; color:red">Ta participation est bien enregistrée !</h3><br/>
+             <a href="https://piconlive.piconaperitif.com/" title="pipi" alt="picon"><img width="648" height="1834" src="https://piconlive.piconaperitif.com/img/PICON_Confirmation_email_FR.png" alt="picon"></a>
+        </div>
+        </td>
+    </tr>
+    </table>
+</div>
 
 </body>
 
