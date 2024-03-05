@@ -8,8 +8,8 @@
 
 <body>
    
-    <img src='{{ $message->embed(public_path().'/img/PICON_Confirmation_email_EN.png') }}'>
-    
+    <a href="https://piconlive.piconaperitif.com/"><img src='{{ $message->embed(public_path().'/img/PICON_Confirmation_email_EN.png') }}'></a>
+
 </body>
 
 </html>
