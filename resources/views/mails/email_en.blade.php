@@ -8,7 +8,8 @@
 
 <body>
    
-    <img src='{{ $message->embed(public_path().'/img/email.png') }}'>
+    <img src='{{ $message->embed(public_path().'/img/PICON_Confirmation_email_EN.png') }}'>
+    
 </body>
 
 </html>

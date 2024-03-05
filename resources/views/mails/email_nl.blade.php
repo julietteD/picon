@@ -7,8 +7,9 @@
 </head>
 
 <body>
-   
-    <img src='{{ $message->embed(public_path().'/img/email.png') }}'>
+
+    <a href="https://piconlive.piconaperitif.com/"><img src='{{ $message->embed(public_path().'/img/PICON_Confirmation_email_NL.png') }}'></a>
+
 </body>
 
 </html>
