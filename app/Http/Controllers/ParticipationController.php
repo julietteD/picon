@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 use App\Mail\ParticipationService;
+use App\Mail\ParticipationTestService;
+
 use Mail;
 use App;
 use Session;
@@ -54,12 +56,12 @@ class ParticipationController extends Controller
     public function emailTest(){
         $formData = [
             'language' => 'fr',
-            'email' => 'marie.lepevedic@digizik.com',
+            'email' => 'juliette.delpech@gmail.com',
             'firstname' => 'juliette',
             'lastname' => 'test'
         ];
-        $recipientEmail = 'marie.lepevedic@digizik.com';
-        Mail::to($recipientEmail)->send(new ParticipationService($formData));
+        $recipientEmail = 'juliette.delpech@gmail.com';
+        Mail::to($recipientEmail)->send(new ParticipationTestService($formData));
         $content = Content::first();
         $calendars = Calendar::orderBy('orderElt')->get();
         return view('welcome', ['content' => $content, 'calendars' => $calendars]);

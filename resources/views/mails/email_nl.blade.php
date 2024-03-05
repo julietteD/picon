@@ -8,7 +8,7 @@
 
 <body>
 
-    <a href="https://piconlive.piconaperitif.com/"><img src='{{ $message->embed(public_path().'/img/PICON_Confirmation_email_NL.png') }}'></a>
+   <a href="https://piconlive.piconaperitif.com/"><img style="display:block;width:100%;max-width:700px;border:0px;" src="https://piconlive.piconaperitif.com/img/PICON_Confirmation_email_NL.png" border="0"  alt="picon"></a>
 
 </body>
 

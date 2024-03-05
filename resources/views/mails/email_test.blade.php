@@ -7,7 +7,6 @@
 </head>
 
 <body>
-   
    <a href="https://piconlive.piconaperitif.com/"><img style="display:block;width:100%;max-width:700px;border:0px;" src="https://piconlive.piconaperitif.com/img/PICON_Confirmation_email_EN.png" border="0"  alt="picon"></a>
 
 </body>
