@@ -48,7 +48,6 @@
                             @else {!! $content->en_body3 !!} 
                             @endif
                             </div>
-                    <a href="#section2" class="cta light-cta">{{ __('Inscris-toi au showcase') }}</a>
                  </div>
             </div>
             
