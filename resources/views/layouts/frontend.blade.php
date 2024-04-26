@@ -30,7 +30,7 @@ fbq('track', 'PageView');
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>PICON</title>
-		<link href="{{ asset('css/style.css?v=3') }}" rel="stylesheet">
+		<link href="{{ asset('css/style.css?v=4') }}" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/css/datepicker.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -60,7 +60,7 @@ fbq('track', 'PageView');
 		
 	</div>
 	
-		<script src="{{ asset('js/front.js') }}?v=3"></script>
+		<script src="{{ asset('js/front.js') }}?v=4"></script>
  <script>
          var elementExists = document.getElementById("alert");
         if(elementExists){  document.getElementById("section2").scrollIntoView()};
