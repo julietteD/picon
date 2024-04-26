@@ -12,44 +12,18 @@
             @else {{ $content->en_title1 }}
             @endif
         </h1>
-        <div class="intro">
-           
-                @if(app()->getLocale()=='fr' ){!! $content->fr_body1 !!} 
-                @elseif(app()->getLocale()=='nl'){!! $content->nl_body1 !!} 
-                @else {!! $content->en_body1 !!} 
-                @endif
-            
-        </div>
+       
         <div class="mainVideo">
 
           <div class="video">
-                <video autoplay loop muted playsinline style="width:100%" poster="{{ asset('img/poster.png') }}" >
-                <source src="{{ asset('img/MOTION_STORY_PICON.mp4') }}"  type="video/mp4">
+                <video autoplay loop muted playsinline style="width:100%" poster="{{ asset('img/poster-2.png') }}" >
+                <source src="{{ asset('img/PICON_SHOWCASE_EN-2.mp4') }}"  type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
             </div>
 
-            <div class="hover-content">
-                <div class="content-text">
-                    <h2>  @if(app()->getLocale()=='fr' ){!! $content->fr_title2 !!} 
-                @elseif(app()->getLocale()=='nl'){!! $content->nl_title2 !!} 
-                @else {!! $content->en_title2 !!} 
-                @endif</h2>
-                
-                 <div class="programme"> 
-                   
-                    @if(app()->getLocale()=='fr' ){!! $content->fr_body2 !!} 
-                    @elseif(app()->getLocale()=='nl'){!! $content->nl_body2 !!} 
-                    @else {!! $content->en_body2 !!} 
-                    @endif
-                    
-                     @if(app()->getLocale()=='fr' ){!! $content->fr_body3 !!} 
-                            @elseif(app()->getLocale()=='nl'){!! $content->nl_body3 !!} 
-                            @else {!! $content->en_body3 !!} 
-                            @endif
-                            </div>
-                 </div>
-            </div>
+         
+         <h2>SHOWCASE • 04.04.24 • BRUSSELS • YELLOWSTRAPS & MORGAN</h2
             
         </div>
 

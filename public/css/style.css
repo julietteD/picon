@@ -128,13 +128,18 @@ header .language-switcher span:last-child:after {
 }
 
 #section1 .video {
-    width: 40%;
+    width: 100%;
 }
 
 #section1 .mainVideo {
     margin-bottom: 50px;
-    display: flex;
     flex-direction: row-reverse;
+}
+
+#section1 .mainVideo h2 {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 35px;
 }
 
 #section1 .hover-content {
@@ -705,5 +710,8 @@ footer .warning {
     }
     header {
         text-align: left;
+    }
+    #section1 .mainVideo h2 {
+        font-size: 25px;
     }
 }
