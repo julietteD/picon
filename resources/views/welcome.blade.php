@@ -15,15 +15,16 @@
        
         <div class="mainVideo">
 
-          <div class="video">
-                <video autoplay loop muted playsinline style="width:100%" poster="{{ asset('img/poster-2.png') }}" >
+          <div class="video ">
+              <!--  <video autoplay loop muted playsinline style="width:100%" poster="{{ asset('img/poster-2.png') }}" >
                 <source src="{{ asset('img/PICON_SHOWCASE_EN-2.mp4') }}"  type="video/mp4">
                 Your browser does not support the video tag.
-                </video>
+                </video>-->
+               <div class="videoWrapper"> <iframe width="560" height="315" src="https://www.youtube.com/embed/NzNFwY_4mqA?si=DsvKSypYlv3OPw2h" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             </div>
 
          
-         <h2>SHOWCASE • 04.04.24 • BRUSSELS • YELLOWSTRAPS & MORGAN</h2
+         <h2>SHOWCASE • 04.04.24 • BRUSSELS • YELLOWSTRAPS & MORGAN</h2>
             
         </div>
 
